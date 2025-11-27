@@ -17,3 +17,21 @@ venv
 .vscode
 chat-log.html
 .env
+
+# Database connection files (may contain credentials)
+db-connect.php
+db-connect*.php
+_mmServerScripts/
+
+# Log files (may contain sensitive runtime data)
+*.log
+log.html
+log.txt
+
+# Test files (may contain sensitive test data)
+test-*.php
+
+# Backup files
+*BACKUP*
+*.bak
+*.backup
