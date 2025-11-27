@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--<!DOCTYPE html>-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="../img/favicon/lg_favicon.ico">
+<style>
+    body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 10px;
+    background: #111;
+    color: #fff;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 100vw;
+    max-width: 100vh;
+    margin: 0 auto;
+}
+
+
+
+/* /lg/maps/index.html--- MAPS specific page*/
+.tile {
+  flex-basis: 33.33%;
+  text-align: center;
+  padding: 0;
+}
+
+.tile img {
+  max-width: 100%;
+  height: auto;
+}
+button#toggle-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: solid 1px #000;
+    border-radius: 35px;
+    padding: 5px 20px;
+    z-index: 1;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 50%);
+}
+button#toggle-button:hover {
+ background:#333;
+ cursor: pointer;
+ color:#fff;
+
+}
+
+
+
+/* FULL SCREEN IMAGE CSS */
+.tile {
+  position: relative;
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.9;
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  object-fit: contain;
+  transition: all 0.2s ease-in-out;
+}
+
+.full-screen img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+</style>
+
+
+</head>
+<body>
+<!-- <h1> LIGHT GRAY MAPS</h1> -->
+
+<button id="toggle-button">SWAP LEVEL</button>
+
+<div id="grid-1" class="flex-container">
+  <!-- Cells for grid 1 -->
+  <h2>MAIN LEVEL</h2>
+  <div class="flex-container">
+    <div class="tile">
+      <img src="../img/lightgray_map_starcity.jpg" alt="lightgray_map_starcity">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_mountains.jpg" alt="lightgray_map_mountains">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_dark_forest_main.jpg" alt="lightgray_map_dark_forest_main">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_blueocean_main.jpg" alt="lightgray_map_blueocean_main">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_grassyfield_main.jpg" alt="lightgray_map_grassyfield_main">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_forest_main.jpg" alt="lightgray_map_forest_main">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_swamp_main.jpg" alt="lightgray_map_swamp_main">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_rockyflats_main.jpg" alt="lightgray_map_rockyflats_main">
+    </div>
+    <div class="tile">
+      <img src="../img/lightgray_map_redtown_main.jpg" alt="lightgray_map_redtown_main">
+    </div>
+  </div>
+</div>
+
+<div id="grid-2" class="flex-container" style="display: none;">
+  <!-- Cells for grid 2 -->
+  <h2>LOWER LEVEL</h2>
+  <div class="flex-container">
+    <div class="tile">
+        <img src="../img/lightgray_map_no_map.jpg" alt="lightgray_map_no_map">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_no_map.jpg" alt="lightgray_map_no_map">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_no_map.jpg" alt="lightgray_map_no_map">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_blueocean_underwater.jpg" alt="lightgray_map_blueocean_underwater">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_grassyfield_underground.jpg" alt="lightgray_map_grassyfield_underground">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_forest_underground.jpg" alt="lightgray_map_forest_underground">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_no_map.jpg" alt="lightgray_map_no_map">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_rockyflats_underground.jpg" alt="lightgray_map_rockyflats_underground">
+      </div>
+      <div class="tile">
+        <img src="../img/lightgray_map_redtown_sewers.jpg" alt="lightgray_map_redtown_sewers">
+      </div>
+  </div>
+</div>
+
+
+
+<script>
+    // TOGGLE BETWEEN MAP GRIDS
+    document.getElementById('toggle-button').addEventListener('click', function() {
+  var grid1 = document.getElementById('grid-1');
+  var grid2 = document.getElementById('grid-2');
+  if (grid1.style.display === 'none') {
+    grid1.style.display = 'flex';
+    grid2.style.display = 'none';
+  } else {
+    grid1.style.display = 'none';
+    grid2.style.display = 'flex';
+  }
+});
+
+</script>
+
+
+<script>
+    // FULL SCREEN ON IMAGE CLICK
+    document.querySelectorAll('.tile').forEach(function(tile) {
+  var img = tile.querySelector('img');
+  img.addEventListener('click', function() {
+    var placeholder = tile.querySelector('.placeholder');
+    if (placeholder === null) {
+      placeholder = document.createElement('div');
+      placeholder.classList.add('placeholder');
+      placeholder.addEventListener('click', function() {
+        placeholder.remove();
+        tile.classList.remove('full-screen');
+      });
+      tile.insertBefore(placeholder, img);
+    } else {
+      placeholder.remove();
+    }
+    tile.classList.toggle('full-screen');
+  });
+});
+
+
+
+
+
+</script>
+</body>

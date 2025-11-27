@@ -1,0 +1,33 @@
+ul.tabs li a { color: #fff; background: #333; }
+ul.tabs li a:hover { background: #666; }
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------- TABS - CUSTOM COLORS */
+
+/*
+#wrapper .tab1.selected {color:#70b9ed;}
+#wrapper .tab2.selected {color:#FF807B;}
+#wrapper .tab3.selected {color:#87d63f;}
+#wrapper .tab4.selected {color:#9D80CF;}
+#wrapper .tab5.selected {color:#c6e4ff;}
+#wrapper .tab6.selected {color:#ffd016;}
+#wrapper .tab7.selected {color:#c59673;}
+*/
+
+ul.subTabs li a.selected  {cursor:default;pointer-events:none;background-color:#fff;color:#70B9EC;}
+#tabs1 ul.subTabs li a { background-color: #70b9ed; }
+#tabs1 ul.subTabs li a.selected { background-color: #fff; color: #70b9ed; }
+#tabs2 ul.subTabs li a { background-color: #FF807B; }
+#tabs2 ul.subTabs li a.selected { background-color: #fff; color: #FF807B; }
+#tabs3 ul.subTabs li a { background-color: #87d63f; }
+#tabs3 ul.subTabs li a.selected { background-color: #fff; color: #87d63f; }
+#tabs4 ul.subTabs li a { background-color: #518fbc; }
+#tabs4 ul.subTabs li a.selected { background-color: #fff; color: #518fbc; }
+#tabs5 ul.subTabs li a { background-color: #BDA0EF; }
+#tabs5 ul.subTabs li a.selected { background-color: #fff; color: #BDA0EF; }
+#tabs6 ul.subTabs li a { background-color: #3EA22D; }
+#tabs6 ul.subTabs li a.selected { background-color: #fff; color: #3EA22D; }
+#tabs7 ul.subTabs li a { background-color: #c59673; }
+#tabs7 ul.subTabs li a.selected { background-color: #fff; color: #c59673; }

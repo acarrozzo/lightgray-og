@@ -1,0 +1,44 @@
+/* ------------------------------------ MIXINS */
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+@mixin border-radius($number: 5px) {
+    -moz-border-radius: $number;
+    border-radius: $number;
+}
+
+@mixin transition($prop, $secs) {
+    -webkit-transition: $prop $secs ease-in-out;
+    -o-transition: $prop $secs ease-in-out;
+    -moz-transition: $prop $secs ease-in-out;
+}
+
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+    // For Google Chrome
+    ::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+        scrollbar-color: $foreground-color $background-color;
+    }
+
+
+
+
+
+
+    

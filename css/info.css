@@ -1,0 +1,833 @@
+/*
+    Created  	: AUGUST 2016
+    Author      : AC
+    Description : FOR INFO / MAP / INBV PAGES
+*/
+/* ------------------------------------ MIXINS */
+/* CSS Document
+
+
+/* ---------------------------------------------------------------------------------------------------- COLORS */
+/* CSS Document
+
+
+light red						#ff807a
+red								#ed4949
+brown 			Wood:#7d3d1c
+lightbrown 	Iron:#c59673
+lightblue 		Steel/Silver:#c6e4ff
+blue 			Mithril:#70b9ed
+green			Adamantium:#87d63f
+dark green						#4F6C42 - crafting button
+gold			Unobtanium:#ffd016
+yellow							#fff000
+dark red		DragonBone:#bb0000
+black			Graynium:#000000
+purple							#6d3eb8
+pink			enchanted:#ff9eff
+*/
+/* ---------------------------------------------------------------------------------------------------- COLORS */
+/* ---------------------------- RED */
+/* ---------------------------- BLUE */
+/* ---------------------------- GREEN */
+/* ---------------------------- GOLD/YELLOW */
+/* ---------------------------- PURPLE */
+/* ---------------------------- BROWN */
+/* ---------------------------- MISC */
+/* ---------- GRAY */
+/* ---------- COOL GRAY OVERRIDE */
+/* ---------------------------- RED */
+/* ---------------------------- BLUE */
+/* ---------------------------- GREEN */
+/* ---------------------------- GOLD/YELLOW */
+/* ---------------------------- PURPLE */
+/* ---------------------------- BROWN */
+/* ---------- Cool grays*/
+/* ---------------------------- RED */
+/* line 9, ../assets/scss/_colors.scss */
+.lightred {
+  color: #FF7D8E;
+}
+/* line 9, ../assets/scss/_colors.scss */
+.lightred svg {
+  fill: #FF7D8E;
+}
+
+/* line 10, ../assets/scss/_colors.scss */
+.red {
+  color: #D66976;
+}
+/* line 10, ../assets/scss/_colors.scss */
+.red svg {
+  fill: #D66976;
+}
+
+/* line 11, ../assets/scss/_colors.scss */
+.darkred {
+  color: #B20000;
+}
+/* line 11, ../assets/scss/_colors.scss */
+.darkred svg {
+  fill: #B20000;
+}
+
+/* line 12, ../assets/scss/_colors.scss */
+.dred {
+  color: #EA4659;
+}
+/* line 12, ../assets/scss/_colors.scss */
+.dred svg {
+  fill: #EA4659;
+}
+
+/* line 13, ../assets/scss/_colors.scss */
+.dead {
+  color: #EA4659;
+}
+/* line 13, ../assets/scss/_colors.scss */
+.dead svg {
+  fill: #EA4659;
+}
+
+/* line 14, ../assets/scss/_colors.scss */
+.redbrown {
+  color: #8C5E74;
+}
+/* line 14, ../assets/scss/_colors.scss */
+.redbrown svg {
+  fill: #8C5E74;
+}
+
+/* line 15, ../assets/scss/_colors.scss */
+.purered {
+  color: #ff0000;
+}
+/* line 15, ../assets/scss/_colors.scss */
+.purered svg {
+  fill: #ff0000;
+}
+
+/* line 17, ../assets/scss/_colors.scss */
+.redBG {
+  background: #D66976;
+}
+
+/* line 18, ../assets/scss/_colors.scss */
+.lightredBG {
+  background: #FF7D8E;
+}
+
+/* line 19, ../assets/scss/_colors.scss */
+.redbrownBG {
+  background: #8C5E74;
+}
+
+/* line 20, ../assets/scss/_colors.scss */
+.darkredBG {
+  background: #B20000;
+}
+
+/* line 21, ../assets/scss/_colors.scss */
+.dredBG {
+  background: #EA4659;
+}
+
+/* line 22, ../assets/scss/_colors.scss */
+.deadBG {
+  background: #EA4659;
+}
+
+/* line 24, ../assets/scss/_colors.scss */
+.redborder {
+  border: 1px solid #D66976;
+}
+
+/* line 25, ../assets/scss/_colors.scss */
+.lightredborder {
+  border: 1px solid #FF7D8E;
+}
+
+/* ---------------------------- BLUE */
+/* line 30, ../assets/scss/_colors.scss */
+.blue {
+  color: #569ACF;
+}
+/* line 30, ../assets/scss/_colors.scss */
+.blue svg {
+  fill: #569ACF;
+}
+
+/* line 31, ../assets/scss/_colors.scss */
+.lightblue {
+  color: #BEE3FF;
+}
+/* line 31, ../assets/scss/_colors.scss */
+.lightblue svg {
+  fill: #BEE3FF;
+}
+
+/* line 32, ../assets/scss/_colors.scss */
+.darkblue {
+  color: #3E8DCB;
+}
+/* line 32, ../assets/scss/_colors.scss */
+.darkblue svg {
+  fill: #3E8DCB;
+}
+
+/* line 33, ../assets/scss/_colors.scss */
+.cyan {
+  color: #00FFFF;
+}
+/* line 33, ../assets/scss/_colors.scss */
+.cyan svg {
+  fill: #00FFFF;
+}
+
+/* line 34, ../assets/scss/_colors.scss */
+.ocean {
+  color: #0EB3F5;
+}
+/* line 34, ../assets/scss/_colors.scss */
+.ocean svg {
+  fill: #0EB3F5;
+}
+
+/* line 36, ../assets/scss/_colors.scss */
+.blueborder {
+  border: 1px solid #569ACF;
+}
+
+/* line 37, ../assets/scss/_colors.scss */
+.blueBG {
+  background: #569ACF;
+}
+
+/* line 38, ../assets/scss/_colors.scss */
+.lightblueBG {
+  background: #BEE3FF;
+}
+
+/* line 39, ../assets/scss/_colors.scss */
+.darkblueBG {
+  background: #3E8DCB;
+}
+
+/* line 40, ../assets/scss/_colors.scss */
+.oceanBG {
+  background: #0EB3F5;
+}
+
+/* ---------------------------- GREEN */
+/* line 45, ../assets/scss/_colors.scss */
+.green {
+  color: #6EBC75;
+}
+/* line 45, ../assets/scss/_colors.scss */
+.green svg {
+  fill: #6EBC75;
+}
+
+/* line 46, ../assets/scss/_colors.scss */
+.dgreen {
+  color: #3EA22D;
+}
+/* line 46, ../assets/scss/_colors.scss */
+.dgreen svg {
+  fill: #3EA22D;
+}
+
+/* line 47, ../assets/scss/_colors.scss */
+.darkgreen {
+  color: #4F6C42;
+}
+/* line 47, ../assets/scss/_colors.scss */
+.darkgreen svg {
+  fill: #4F6C42;
+}
+
+/* line 49, ../assets/scss/_colors.scss */
+.greenborder {
+  border: 1px solid #6EBC75;
+}
+
+/* line 52, ../assets/scss/_colors.scss */
+.greenBG {
+  background: #6EBC75;
+}
+
+/* line 53, ../assets/scss/_colors.scss */
+.dgreenBG {
+  background: #57A60F;
+}
+
+/* line 54, ../assets/scss/_colors.scss */
+.darkgreenBG {
+  background: #4F6C42;
+}
+
+/* ---------------------------- GOLD/YELLOW */
+/* line 59, ../assets/scss/_colors.scss */
+.gold {
+  color: #EFB045;
+}
+/* line 59, ../assets/scss/_colors.scss */
+.gold svg {
+  fill: #EFB045;
+}
+
+/* line 60, ../assets/scss/_colors.scss */
+.yellow {
+  color: #FFFF00;
+}
+/* line 60, ../assets/scss/_colors.scss */
+.yellow svg {
+  fill: #FFFF00;
+}
+
+/* line 61, ../assets/scss/_colors.scss */
+.lyellow {
+  color: #ffe183;
+}
+/* line 61, ../assets/scss/_colors.scss */
+.lyellow svg {
+  fill: #ffe183;
+}
+
+/* line 62, ../assets/scss/_colors.scss */
+.yellowgreen {
+  color: #c4ee00;
+}
+/* line 62, ../assets/scss/_colors.scss */
+.yellowgreen svg {
+  fill: #c4ee00;
+}
+
+/* line 63, ../assets/scss/_colors.scss */
+.darkgold {
+  color: #e5a812;
+}
+/* line 63, ../assets/scss/_colors.scss */
+.darkgold svg {
+  fill: #e5a812;
+}
+
+/* line 64, ../assets/scss/_colors.scss */
+.orange {
+  color: #de6e1d;
+}
+/* line 64, ../assets/scss/_colors.scss */
+.orange svg {
+  fill: #de6e1d;
+}
+
+/* line 66, ../assets/scss/_colors.scss */
+.goldBG {
+  background: #EFB045;
+}
+
+/* line 67, ../assets/scss/_colors.scss */
+.yellowBG {
+  background: #FFFF00;
+}
+
+/* line 68, ../assets/scss/_colors.scss */
+.yellowgreenBG {
+  background: #c4ee00;
+  color: #4F6C42;
+}
+
+/* line 69, ../assets/scss/_colors.scss */
+.orangeBG {
+  background: #de6e1d;
+}
+
+/* ---------------------------- PURPLE */
+/* line 74, ../assets/scss/_colors.scss */
+.purple {
+  color: #9287D0;
+}
+/* line 74, ../assets/scss/_colors.scss */
+.purple svg {
+  fill: #9287D0;
+}
+
+/* line 75, ../assets/scss/_colors.scss */
+.lightpurple {
+  color: #BDA0EF;
+}
+/* line 75, ../assets/scss/_colors.scss */
+.lightpurple svg {
+  fill: #BDA0EF;
+}
+
+/* line 76, ../assets/scss/_colors.scss */
+.medpurple {
+  color: #9D80CF;
+}
+/* line 76, ../assets/scss/_colors.scss */
+.medpurple svg {
+  fill: #9D80CF;
+}
+
+/* line 77, ../assets/scss/_colors.scss */
+.pink {
+  color: #ff9eff;
+}
+/* line 77, ../assets/scss/_colors.scss */
+.pink svg {
+  fill: #ff9eff;
+}
+
+/* line 80, ../assets/scss/_colors.scss */
+.purpleBG {
+  background: #9287D0;
+}
+
+/* line 81, ../assets/scss/_colors.scss */
+.lightpurpleBG {
+  background: #BDA0EF;
+}
+
+/* line 82, ../assets/scss/_colors.scss */
+.pinkBG {
+  background: #ff9eff;
+}
+
+/* ---------------------------- BROWN */
+/* line 87, ../assets/scss/_colors.scss */
+.lightbrown {
+  color: #BD9486;
+}
+/* line 87, ../assets/scss/_colors.scss */
+.lightbrown svg {
+  fill: #BD9486;
+}
+
+/* line 88, ../assets/scss/_colors.scss */
+.brown {
+  color: #8F7772;
+}
+/* line 88, ../assets/scss/_colors.scss */
+.brown svg {
+  fill: #8F7772;
+}
+
+/* old brown :#7d3d1c */
+/* line 89, ../assets/scss/_colors.scss */
+.darkbrown {
+  color: #6D3A24;
+}
+/* line 89, ../assets/scss/_colors.scss */
+.darkbrown svg {
+  fill: #6D3A24;
+}
+
+/* old brown :#7d3d1c */
+/* line 91, ../assets/scss/_colors.scss */
+.dbrown {
+  color: #55463E;
+}
+/* line 91, ../assets/scss/_colors.scss */
+.dbrown svg {
+  fill: #55463E;
+}
+
+/* new dbrown (medium brown) - made 2023 */
+/* line 93, ../assets/scss/_colors.scss */
+.brownBG {
+  background: #8F7772;
+}
+
+/* line 94, ../assets/scss/_colors.scss */
+.lightbrownBG {
+  background: #BD9486;
+}
+
+/* line 95, ../assets/scss/_colors.scss */
+.dbrownBG {
+  background: #55463E;
+}
+
+/* line 96, ../assets/scss/_colors.scss */
+.darkbrownBG {
+  background: #6D3A24;
+}
+
+/* ---------------------------- MISC */
+/* line 100, ../assets/scss/_colors.scss */
+.greenfield {
+  color: #7ebe63;
+}
+/* line 100, ../assets/scss/_colors.scss */
+.greenfield svg {
+  fill: #7ebe63;
+}
+
+/* line 101, ../assets/scss/_colors.scss */
+.greenfieldBG {
+  background: #7ebe63;
+}
+
+/* line 103, ../assets/scss/_colors.scss */
+.forest {
+  color: #46ac4d;
+}
+/* line 103, ../assets/scss/_colors.scss */
+.forest svg {
+  fill: #46ac4d;
+}
+
+/* line 104, ../assets/scss/_colors.scss */
+.forestBG {
+  background: #46ac4d;
+}
+
+/* line 106, ../assets/scss/_colors.scss */
+.swamp {
+  color: #96a172;
+}
+/* line 106, ../assets/scss/_colors.scss */
+.swamp svg {
+  fill: #96a172;
+}
+
+/* line 107, ../assets/scss/_colors.scss */
+.swampBG {
+  background: #96a172;
+}
+
+/* line 108, ../assets/scss/_colors.scss */
+.dirt {
+  color: #937774;
+}
+/* line 108, ../assets/scss/_colors.scss */
+.dirt svg {
+  fill: #937774;
+}
+
+/* line 109, ../assets/scss/_colors.scss */
+.dirtBG {
+  background: #937774;
+}
+
+/* line 110, ../assets/scss/_colors.scss */
+.sand {
+  color: #ffcb39;
+}
+/* line 110, ../assets/scss/_colors.scss */
+.sand svg {
+  fill: #ffcb39;
+}
+
+/* line 111, ../assets/scss/_colors.scss */
+.sandBG {
+  background: #ffcb39;
+}
+
+/* line 112, ../assets/scss/_colors.scss */
+.savannah {
+  color: #b1bd62;
+}
+/* line 112, ../assets/scss/_colors.scss */
+.savannah svg {
+  fill: #b1bd62;
+}
+
+/* line 113, ../assets/scss/_colors.scss */
+.savannahBG {
+  background: #b1bd62;
+}
+
+/* ---------- GRAY */
+/* line 117, ../assets/scss/_colors.scss */
+.lightgray {
+  color: #EBEEF3;
+}
+/* line 117, ../assets/scss/_colors.scss */
+.lightgray svg {
+  fill: #EBEEF3;
+}
+
+/* line 118, ../assets/scss/_colors.scss */
+.lgray {
+  color: #C5CBD8;
+}
+/* line 118, ../assets/scss/_colors.scss */
+.lgray svg {
+  fill: #C5CBD8;
+}
+
+/* line 119, ../assets/scss/_colors.scss */
+.gray {
+  color: #8C97AB;
+}
+/* line 119, ../assets/scss/_colors.scss */
+.gray svg {
+  fill: #8C97AB;
+}
+
+/* line 120, ../assets/scss/_colors.scss */
+.dgray {
+  color: #66748A;
+}
+/* line 120, ../assets/scss/_colors.scss */
+.dgray svg {
+  fill: #66748A;
+}
+
+/* line 121, ../assets/scss/_colors.scss */
+.darkgray {
+  color: #546378;
+}
+/* line 121, ../assets/scss/_colors.scss */
+.darkgray svg {
+  fill: #546378;
+}
+
+/* line 122, ../assets/scss/_colors.scss */
+.darkergray {
+  color: #425266;
+}
+/* line 122, ../assets/scss/_colors.scss */
+.darkergray svg {
+  fill: #425266;
+}
+
+/* line 123, ../assets/scss/_colors.scss */
+.darkestgray {
+  color: #344456;
+}
+/* line 123, ../assets/scss/_colors.scss */
+.darkestgray svg {
+  fill: #344456;
+}
+
+/* line 124, ../assets/scss/_colors.scss */
+.ddgray {
+  color: #20303F;
+}
+/* line 124, ../assets/scss/_colors.scss */
+.ddgray svg {
+  fill: #20303F;
+}
+
+/* line 125, ../assets/scss/_colors.scss */
+.dddgray {
+  color: #111F2B;
+}
+/* line 125, ../assets/scss/_colors.scss */
+.dddgray svg {
+  fill: #111F2B;
+}
+
+/* line 126, ../assets/scss/_colors.scss */
+.black {
+  color: #000;
+}
+/* line 126, ../assets/scss/_colors.scss */
+.black svg {
+  fill: #000;
+}
+
+/* line 127, ../assets/scss/_colors.scss */
+.white {
+  color: #FFF;
+}
+/* line 127, ../assets/scss/_colors.scss */
+.white svg {
+  fill: #FFF;
+}
+
+/* line 129, ../assets/scss/_colors.scss */
+.noBG {
+  background: none;
+}
+
+/* line 130, ../assets/scss/_colors.scss */
+.lightgrayBG {
+  background: #EBEEF3;
+}
+
+/* line 131, ../assets/scss/_colors.scss */
+.lgrayBG {
+  background: #C5CBD8;
+}
+
+/* line 132, ../assets/scss/_colors.scss */
+.grayBG {
+  background: #8C97AB;
+}
+
+/* line 133, ../assets/scss/_colors.scss */
+.dgrayBG {
+  background: #66748A;
+}
+
+/* line 134, ../assets/scss/_colors.scss */
+.darkgrayBG {
+  background: #546378;
+}
+
+/* line 135, ../assets/scss/_colors.scss */
+.darkergrayBG {
+  background: #425266;
+}
+
+/* line 136, ../assets/scss/_colors.scss */
+.darkestgrayBG {
+  background: #344456;
+}
+
+/* line 137, ../assets/scss/_colors.scss */
+.ddgrayBG {
+  background: #20303F;
+}
+
+/* line 138, ../assets/scss/_colors.scss */
+.dddgrayBG {
+  background: #111F2B;
+}
+
+/* line 140, ../assets/scss/_colors.scss */
+.blackBG {
+  background: #000;
+}
+
+/* line 141, ../assets/scss/_colors.scss */
+.whiteBG {
+  background: #FFF;
+}
+
+/* line 143, ../assets/scss/_colors.scss */
+.feed .shopBTN {
+  background: #EFB045;
+  color: #546378;
+  text-transform: uppercase;
+}
+
+/* line 11, ../assets/scss/info.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 14, ../assets/scss/info.scss */
+body {
+  color: #546378;
+  background: #EBEEF3;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 15, ../assets/scss/info.scss */
+body, input {
+  font-family: 'Rubik', serif;
+  -webkit-appearance: none;
+}
+
+/* line 20, ../assets/scss/info.scss */
+form, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, ../assets/scss/info.scss */
+header {
+  padding: 20px;
+  background: #8C97AB;
+  color: #fff;
+}
+
+/* line 24, ../assets/scss/info.scss */
+.world-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  line-height: 0;
+  max-width: 100vh;
+  margin: 0 auto;
+}
+/* line 32, ../assets/scss/info.scss */
+.world-map figure {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+/* line 37, ../assets/scss/info.scss */
+.world-map li {
+  list-style: none;
+}
+/* line 41, ../assets/scss/info.scss */
+.world-map img {
+  width: 100%;
+}
+
+/* line 46, ../assets/scss/info.scss */
+[data-pop] {
+  transition: 1s all;
+  cursor: pointer;
+  background: #fff;
+}
+/* line 51, ../assets/scss/info.scss */
+[data-pop]:before {
+  content: "\f065";
+  font-family: FontAwesome;
+  position: absolute;
+  color: #fff;
+  right: 7px;
+  top: 7px;
+  line-height: 1em;
+  font-size: 1rem;
+}
+/* line 61, ../assets/scss/info.scss */
+[data-pop] .nextFig, [data-pop] .prevFig {
+  display: none;
+}
+
+/* line 64, ../assets/scss/info.scss */
+[data-pop].full {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  text-align: center;
+  z-index: 1;
+}
+/* line 76, ../assets/scss/info.scss */
+[data-pop].full img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+/* line 83, ../assets/scss/info.scss */
+[data-pop].full:before {
+  content: "\f066";
+}
+/* line 86, ../assets/scss/info.scss */
+[data-pop].full figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 1px 1px 4px #000, 1px 1px 10px #000;
+  font-weight: 900;
+}
+/* line 96, ../assets/scss/info.scss */
+[data-pop].full.hide {
+  display: block;
+}

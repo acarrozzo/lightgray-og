@@ -1,0 +1,97 @@
+/*
+    Created  	: AUGUST 2016
+    Author      : AC
+    Description : FOR INFO / MAP / INBV PAGES
+*/
+
+
+@import 'mixins';
+@import 'colors';
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+body {color:$darkgray;background:$lightgray;font-size:16px;line-height:1.5em;padding:0;margin:0;}
+body, input {
+font-family: 'Rubik', serif;
+-webkit-appearance:none;}
+
+
+form, p, span {margin:0;padding:0;}
+
+// =======
+header {padding:20px;background:$gray;color:#fff;}
+.world-map {
+  display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      padding: 20px;
+      line-height: 0;
+      max-width: 100vh;
+      margin: 0 auto;
+figure {
+    padding: 0;
+    margin: 0;
+        position: relative;
+}
+    li {
+      list-style:none;
+      //display:flex;width:33%;
+    }
+  img {width:100%;}
+}
+
+
+// ===== DATA POP - from main AC site
+[data-pop] {
+  transition:1s all;
+	cursor:pointer;
+  background:#fff;
+
+	&:before {
+		content:"\f065";
+		font-family:FontAwesome;
+		position: absolute;
+		color: #fff;
+		right: 7px;
+		top: 7px;
+		line-height: 1em;
+		font-size: 1rem;
+	}
+	.nextFig, .prevFig {display:none;}
+}
+
+[data-pop].full {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	margin: 0;
+	padding: 0;
+	background : #111;
+	text-align:center;
+	z-index:1;
+	img {
+		@include vertical-align();
+		max-width: 100%;
+		max-height: 100%;
+		width: auto;
+		height: auto;
+	}
+	&:before {
+	content:"\f066";
+	}
+	figcaption {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		width: 100%;
+		color: #fff;
+		font-size: 1rem;
+    text-shadow: 1px 1px 4px #000, 1px 1px 10px #000;
+    font-weight: 900;
+		}
+	&.hide {display:block;}
+}

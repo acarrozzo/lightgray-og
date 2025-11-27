@@ -1,0 +1,143 @@
+/* CSS Document
+
+
+/* ---------------------------------------------------------------------------------------------------- COLORS */
+@import 'vars';
+
+/* ---------------------------- RED */
+
+.lightred {color:$lightred; svg {fill: $lightred;}}
+.red {color:$red; svg {fill: $red;}}
+.darkred {color:$darkred; svg {fill: $darkred;}}
+.dred {color:$dred; svg {fill: $dred;}}
+.dead {color:$dead; svg {fill: $dead;}}
+.redbrown {color:$redbrown; svg {fill: $redbrown;}}
+.purered {color:#ff0000; svg {fill: #ff0000;}}
+
+.redBG {background:$red;}
+.lightredBG {background:$lightred;}
+.redbrownBG {background:$redbrown;}
+.darkredBG {background:$darkred;}
+.dredBG {background:$dred;}
+.deadBG {background:$dead;}
+
+.redborder {border:1px solid $red;}
+.lightredborder {border:1px solid $lightred;}
+
+
+/* ---------------------------- BLUE */
+
+.blue {color:$blue; svg {fill: $blue;}}
+.lightblue {color:$lightblue; svg {fill: $lightblue;}}
+.darkblue {color:$darkblue; svg {fill: $darkblue;}}
+.cyan {color:#00FFFF; svg {fill: #00FFFF;}}
+.ocean {color:$ocean; svg {fill: $ocean;}}
+
+.blueborder {border:1px solid $blue;}
+.blueBG {background:$blue;}
+.lightblueBG {background:$lightblue;}
+.darkblueBG {background:$darkblue;}
+.oceanBG {background:$ocean;}
+
+
+/* ---------------------------- GREEN */
+
+.green {color:$green; svg {fill: $green;}}
+.dgreen {color:#3EA22D; svg {fill: #3EA22D;}}
+.darkgreen {color:#4F6C42; svg {fill: #4F6C42;}}
+
+.greenborder {border:1px solid $green;}
+
+
+.greenBG {background:$green;}
+.dgreenBG {background:#57A60F;}
+.darkgreenBG {background:#4F6C42;}
+
+
+/* ---------------------------- GOLD/YELLOW */
+
+.gold {color:$gold;svg {fill: $gold;}}
+.yellow {color:$yellow;svg {fill: $yellow;}}
+.lyellow {color:#ffe183;svg {fill: #ffe183;}}
+.yellowgreen {color:#c4ee00;svg {fill: #c4ee00;}}
+.darkgold {color:#e5a812;svg {fill: #e5a812;}}
+.orange {color:#de6e1d;svg {fill: #de6e1d;}}
+
+.goldBG {background:$gold;}
+.yellowBG {background:$yellow;}
+.yellowgreenBG {background:#c4ee00;color:#4F6C42;}
+.orangeBG {background:#de6e1d;}
+
+
+/* ---------------------------- PURPLE */
+
+.purple {color:$purple;svg {fill: $purple;}}
+.lightpurple {color:#BDA0EF;svg {fill: #BDA0EF;}}
+.medpurple {color:#9D80CF;svg {fill: #9D80CF;}}
+.pink {color:#ff9eff;svg {fill: #ff9eff;}}
+
+
+.purpleBG {background:$purple;}
+.lightpurpleBG {background:#BDA0EF;}
+.pinkBG {background:#ff9eff;}
+
+
+/* ---------------------------- BROWN */
+
+.lightbrown {color:$lightbrown;svg {fill: $lightbrown;}}
+.brown {color:$brown;svg {fill: $brown;}} /* old brown :#7d3d1c */
+.darkbrown {color:$darkbrown;svg {fill: $darkbrown;}} /* old brown :#7d3d1c */
+
+.dbrown {color:$dbrown;svg {fill: $dbrown;}} /* new dbrown (medium brown) - made 2023 */
+
+.brownBG {background:$brown;}
+.lightbrownBG {background:$lightbrown;}
+.dbrownBG {background:$dbrown;}
+.darkbrownBG {background:$darkbrown;}
+
+
+/* ---------------------------- MISC */
+.greenfield {color:#7ebe63;svg {fill: #7ebe63;}}
+.greenfieldBG {background:#7ebe63;}
+
+.forest {color:#46ac4d;svg {fill: #46ac4d;}}
+.forestBG {background:#46ac4d;}
+
+.swamp {color:#96a172;svg {fill: #96a172;}}
+.swampBG {background:#96a172;}
+.dirt {color:#937774;svg {fill: #937774;}}
+.dirtBG {background:#937774;}
+.sand {color:#ffcb39;svg {fill: #ffcb39;}}
+.sandBG {background:#ffcb39;}
+.savannah {color:#b1bd62;svg {fill:#b1bd62;}}
+.savannahBG {background:#b1bd62;}
+
+/* ---------- GRAY */
+
+.lightgray {color:$lightgray;svg {fill: $lightgray;}}
+.lgray {color:$lgray;svg {fill: $lgray;}}
+.gray {color:$gray;svg {fill: $gray;}}
+.dgray {color:$dgray;svg {fill: $dgray;}}
+.darkgray {color:$darkgray;svg {fill: $darkgray;}}
+.darkergray {color:$darkergray;svg {fill: $darkergray;}}
+.darkestgray {color:$darkestgray;svg {fill: $darkestgray;}}
+.ddgray {color:$ddgray;svg {fill: $ddgray;}}
+.dddgray {color:$dddgray;svg {fill: $dddgray;}}
+.black {color:$black;svg {fill: $black;}}
+.white {color:$white;svg {fill: $white;}}
+
+.noBG {background:none;}
+.lightgrayBG {background:$lightgray;}
+.lgrayBG {background:$lgray;}
+.grayBG {background:$gray;}
+.dgrayBG {background:$dgray;}
+.darkgrayBG {background:$darkgray;}
+.darkergrayBG {background:$darkergray;}
+.darkestgrayBG {background:$darkestgray;}
+.ddgrayBG {background:$ddgray;}
+.dddgrayBG {background:$dddgray;}
+
+.blackBG {background:$black;}
+.whiteBG {background:$white;}
+
+.feed .shopBTN {background:$gold;color:$darkgray;text-transform:uppercase;}

@@ -1,0 +1,91 @@
+<?php
+// -- 103b -- Cows
+$roomname = "Cows";
+$lookdesc = $_SESSION['lookdesc'] = $_SESSION['desc103b'];
+$dangerLVL = $_SESSION['dangerLVL'] = "2"; // danger level
+
+include ('function-start.php'); 
+
+// // -------------------------DB CONNECT!
+// include ('db-connect.php');  
+// // -------------------------DB QUERY!
+// $stmt = $link->prepare("SELECT * FROM users WHERE username = ?");
+// $stmt->bind_param("s", $_SESSION['username']);
+// $stmt->execute();
+// $result = $stmt->get_result();
+// if (!$result) {
+//     die('There was an error running the query [' . $link->error . ']');
+// }
+// // -------------------------DB OUTPUT!
+// while($row = $result->fetch_assoc()){
+
+$row = getUserData($link, $_SESSION['username']); // --- gets all user data from database   
+	
+
+$infight = $row['infight'];
+$endfight = $row['endfight'];
+
+
+	
+// -------------------------------------------------------------------------- If room ready create random rand #
+if ($infight < 1 && $endfight != 1) 
+	{	$rand = rand (1,10); 
+	}	else {$rand=0;}	
+// -------------------------------------------------------------------------- INITIALIZE Cow - 50%
+if(($input=='attack cow' || $input=='attack' || $rand <= 5 ) && $infight==0 && $endfight==0) 
+	{	if ($input=='attack cow') { $input = 'attack'; }
+		// $results = $link->query("UPDATE $user SET enemy = 'Cow'");
+		$updates = [ 'enemy' => 'Cow']; // -- set changes
+        updateStats($link, $username, $updates); // -- apply changes
+		include ('battle.php'); }
+// -------------------------------------------------------------------------- IN BATTLE		
+else if ($infight >=1 ) 
+	{ 	if($input=='attack cow') { $input = 'attack'; }
+		include ('battle.php');	}		
+
+
+
+
+
+
+// -------------------------------------------------------------------------- Battle TRAVEL
+if ((	$input=='n' || $input=='north' || $input=='ne' || $input=='northeast' ||
+		$input=='e' || $input=='east' || $input=='se' || $input=='southeast' ||
+		$input=='s' || $input=='south' || $input=='sw' || $input=='southwest' ||
+		$input=='w' || $input=='west' || $input=='nw' || $input=='northwest' ||
+		$input=='u' || $input=='up' || $input=='d' || $input=='down' )  && $infight >= 1) {
+	echo 'You cannot leave the room in the middle of battle!<br>';
+   	$message="<i>You cannot leave the room in the middle of battle!</i><br>";
+	include ('update_feed.php'); // --- update feed
+	}
+
+// -------------------------------------------------------------------------- TRAVEL
+// else if($input=='w' || $input=='west') 
+// {	echo 'You travel west<br>';
+//  	$message="<i>You travel west</i><br>".$_SESSION['desc103c'];
+// 	include ('update_feed.php'); // --- update feed
+// 	$results = $link->query("UPDATE $user SET room = '103c'"); // -- room change
+//    	//  $results = $link->query("UPDATE $user SET endfight = 0"); // -- reset fight
+// 		 updateStats($link, $username, ['endfight' => 0]); // -- update stats
+// }
+// else if($input=='s' || $input=='south') 
+// {	echo 'You travel south<br>';
+//  	$message="<i>You travel south</i><br>".$_SESSION['desc103'];
+// 	include ('update_feed.php'); // --- update feed
+// 	$results = $link->query("UPDATE $user SET room = 103"); // -- room change
+//    	//  $results = $link->query("UPDATE $user SET endfight = 0"); // -- reset fight
+// 		 updateStats($link, $username, ['endfight' => 0]); // -- update stats
+// 	$_SESSION['cowtoll'] = 0;
+// }
+
+// -------------------------------------------------------------------------- TRAVEL
+elseif ($input == 'south') {    
+	$roomNum = '103';handleTravel($_SESSION['username'], $link, 'south', $roomNum, 'desc'.$roomNum.'');
+	$_SESSION['cowtoll'] = 0;
+} 
+elseif ($input == 'west') {     $roomNum = '103c';handleTravel($_SESSION['username'], $link, 'west', $roomNum, 'desc'.$roomNum.'');} 
+
+// ----------------------------------- end of room function
+include('function-end.php');
+// }
+?>

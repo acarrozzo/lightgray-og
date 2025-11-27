@@ -1,0 +1,627 @@
+/* Scss Document */
+body {
+  font-family: raleway, dosis, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 14px;
+  margin: -4px 0 5px;
+  font-size: 11px; }
+
+#stickman {
+  width: 300px;
+  margin: 0 auto;
+  border: solid 0px;
+  height: 400px;
+  position: relative;
+  padding: 50px 0 0 60px; }
+  #stickman .bPart {
+    background: #ccc;
+    position: absolute;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  #stickman .bPart .armorPiece {
+    top: 2px;
+    left: 2px;
+    background: #888;
+    position: absolute;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  #stickman.heavy .bPart, #stickman.heavy .armorPiece {
+    width: 16px; }
+  #stickman.light .bPart, #stickman.light .armorPiece {
+    width: 4px; }
+  #stickman.square .bPart, #stickman.square .armorPiece {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+  #stickman.round .bPart, #stickman.round .armorPiece {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+  #stickman.ellipse .bPart, #stickman.ellipse .armorPiece {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+  #stickman .upperHalf {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    top: 0px; }
+  #stickman.leanBack .upperHalf {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    right: 12px; }
+  #stickman.leanForward .upperHalf {
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+    right: -12px; }
+  #stickman.zoomX2 {
+    transform: scale(2);
+    background: #eee; }
+
+#stickman #head {
+  top: 48px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+  #stickman #head .eyes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    bottom: 0; }
+    #stickman #head .eyes > i {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      background: #fff; }
+    #stickman #head .eyes > i .pupil {
+      width: 7px;
+      height: 7px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      background: #000;
+      top: 7px;
+      left: 7px; }
+    #stickman #head .eyes .e1 {
+      left: 3px; }
+    #stickman #head .eyes .e2 {
+      left: 27px; }
+
+#body {
+  left: 0;
+  right: 0;
+  top: 105px;
+  width: 10px;
+  height: 40px;
+  margin: 0 auto; }
+  #body .armorPiece {
+    width: 10px;
+    height: 40px;
+    margin: 0 auto; }
+
+#leftArm {
+  left: 0;
+  right: 38px;
+  top: 101px;
+  width: 10px;
+  height: 30px;
+  margin: 0 auto;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg); }
+  #leftArm .armorPiece {
+    width: 10px;
+    height: 30px;
+    margin: 0 auto; }
+
+#rightArm {
+  left: 38px;
+  right: 0;
+  top: 101px;
+  width: 10px;
+  height: 30px;
+  margin: 0 auto;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg); }
+  #rightArm .armorPiece {
+    width: 10px;
+    height: 30px;
+    margin: 0 auto; }
+
+#leftLeg {
+  left: 0;
+  right: 32px;
+  top: 145px;
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg); }
+  #leftLeg .armorPiece {
+    width: 10px;
+    height: 40px;
+    margin: 0 auto; }
+
+#rightLeg {
+  left: 32px;
+  right: 0;
+  top: 145px;
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg); }
+  #rightLeg .armorPiece {
+    width: 10px;
+    height: 40px;
+    margin: 0 auto; }
+
+.buttons {
+  width: 130px;
+  float: left;
+  background-color: #333;
+  margin: 0;
+  height: 460px;
+  overflow: auto;
+  border-bottom: 10px solid #333;
+  z-index: 2;
+  position: absolute; }
+
+.buttons h3 {
+  font-size: 14px;
+  margin: 12px 0 3px;
+  color: #fff; }
+
+.buttons section {
+  padding: 10px; }
+
+.buttons span {
+  background: #eee;
+  padding: 10px 10px;
+  margin: 3px 0;
+  font-size: 12px;
+  cursor: pointer;
+  display: block; }
+
+.buttons span:hover {
+  background: #fff; }
+
+.buttons span.active {
+  border-right: solid 10px #cf0000; }
+
+#skewBox {
+  position: relative;
+  left: 0%; }
+
+#skewBox.leanR {
+  transform: skewX(-5deg);
+  -webkit-transform: skewX(-5deg);
+  -moz-transform: skewX(-5deg);
+  -ms-transform: skewX(-5deg);
+  -o-transform: skewX(-5deg);
+  left: 10%; }
+
+#skewBox.leanL {
+  transform: skewX(5deg);
+  -webkit-transform: skewX(5deg);
+  -moz-transform: skewX(5deg);
+  -ms-transform: skewX(5deg);
+  -o-transform: skewX(5deg);
+  left: -10%; }
+
+#raceBox {
+  position: relative;
+  bottom: 0; }
+
+#raceBox.human {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1); }
+
+#raceBox.elven {
+  transform: scale(0.8, 1.2);
+  -webkit-transform: scale(0.8, 1.2);
+  -moz-transform: scale(0.8, 1.2);
+  -ms-transform: scale(0.8, 1.2);
+  -o-transform: scale(0.8, 1.2);
+  bottom: 10%; }
+
+#raceBox.halfling {
+  transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  bottom: -15%; }
+
+#raceBox.dwarf {
+  transform: scale(1.5, 0.8);
+  -webkit-transform: scale(1.5, 0.8);
+  -moz-transform: scale(1.5, 0.8);
+  -ms-transform: scale(1.5, 0.8);
+  -o-transform: scale(1.5, 0.8);
+  bottom: -10%; }
+
+#stickman .bPart, #skewBox, #raceBox {
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+/* ---------------------------- sword // every weapon */
+#equipped.armRaise #leftArm {
+  -webkit-transform: rotate(115deg);
+  -moz-transform: rotate(115deg);
+  -ms-transform: rotate(115deg);
+  -o-transform: rotate(115deg);
+  transform: rotate(115deg);
+  top: 88px;
+  right: 50px; }
+
+#equipped #swordHand {
+  position: relative;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+#equipped.armWeapon #swordHand {
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  top: 11px;
+  left: 25px; }
+
+#equipped.armWeapon #swordHand i {
+  background: #999;
+  position: absolute;
+  border-radius: 10px;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+#equipped.armWeapon #swordHand i.p1 {
+  width: 7px;
+  height: 100px;
+  left: 0;
+  right: 170px;
+  margin: 0 auto;
+  top: -10px; }
+
+#equipped.armWeapon #swordHand i.p2 {
+  width: 35px;
+  height: 7px;
+  left: 0;
+  right: 170px;
+  margin: 0 auto;
+  top: 60px; }
+
+/* ---------------------------- shield */
+#equipped #shieldHand {
+  position: relative;
+  opacity: 0;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+#equipped.armShield #shieldHand {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+  top: 87px;
+  left: 9px;
+  opacity: 1; }
+
+#equipped.armShield #shieldHand i {
+  background: #999;
+  position: absolute;
+  border-radius: 10px;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+
+#equipped.armShield #shieldHand i.p1 {
+  width: 10px;
+  height: 50px;
+  left: 87px;
+  right: 0px;
+  margin: 0 auto;
+  top: 5px; }
+
+/* ---------------------------- 2h sword */
+#equipped.arm2h #leftArm {
+  height: 20px;
+  right: 30px; }
+
+#equipped.arm2h #leftArm .armorPiece {
+  height: 20px; }
+
+#equipped.arm2h #rightArm {
+  right: 37px;
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  transform: rotate(50deg);
+  height: 32px;
+  top: 101px; }
+
+#equipped.arm2h #swordHand {
+  top: 15px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  left: 13px; }
+
+#equipped.arm2h #swordHand i.p1 {
+  height: 170px;
+  top: -70px;
+  width: 9px; }
+
+#equipped.arm2h #swordHand i.p2 {
+  height: 9px; }
+
+/* ---------------------------- dagger */
+#equipped.armDagger #swordHand {
+  top: 25px;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+  left: -55px; }
+
+#equipped.armDagger #swordHand i.p1 {
+  height: 40px;
+  top: 40px;
+  right: 167px; }
+
+#equipped.armDagger #swordHand i.p2 {
+  width: 20px;
+  top: 62px;
+  right: 167px; }
+
+/* ---------------------------- alt dagger */
+#equipped.armAltDagger #leftArm {
+  -webkit-transform: rotate(55deg);
+  -moz-transform: rotate(55deg);
+  -ms-transform: rotate(55deg);
+  -o-transform: rotate(55deg);
+  transform: rotate(55deg);
+  left: -6px;
+  top: 99px; }
+
+#equipped.armAltDagger #swordHand {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  top: 75px;
+  left: 35px; }
+
+#equipped.armAltDagger #swordHand i.p1 {
+  height: 40px;
+  top: 30px; }
+
+#equipped.armAltDagger #swordHand i.p2 {
+  width: 20px;
+  top: 42px; }
+
+/* ---------------------------- off hand dagger */
+#equipped.armAltDagger #rightArm {
+  -webkit-transform: rotate(-55deg);
+  -moz-transform: rotate(-55deg);
+  -ms-transform: rotate(-55deg);
+  -o-transform: rotate(-55deg);
+  transform: rotate(-55deg);
+  left: 44px;
+  top: 99px; }
+
+#equipped.armAltDagger #shieldHand {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+  top: 87px;
+  left: 9px;
+  opacity: 1; }
+
+#equipped.armAltDagger #shieldHand i {
+  background: #999;
+  position: absolute;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#equipped.armAltDagger #shieldHand i.p1 {
+  width: 7px;
+  height: 40px;
+  left: 92px;
+  right: 0px;
+  margin: 0 auto;
+  top: 18px; }
+
+#equipped.armAltDagger #shieldHand i.p2 {
+  width: 20px;
+  height: 7px;
+  left: 92px;
+  right: 0px;
+  margin: 0 auto;
+  top: 31px; }
+
+/* ---------------------------- alt dagger - nod head */
+#equipped.armAltDagger .upperHalf {
+  top: 3px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+#equipped.armAltDagger #head {
+  top: 53px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+/* ---------------------------- bo staff */
+#equipped.armBo #swordHand {
+  top: 15px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  left: 13px; }
+
+#equipped.armBo #swordHand i.p1 {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  top: 3px;
+  background-color: #aa6666;
+  right: 167px; }
+
+#equipped.armBo #swordHand i.p2 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+  top: 86px;
+  height: 10px;
+  width: 30px;
+  right: 166px;
+  background: #fff;
+  opacity: .5;
+  border-radius: 0; }
+
+/* ---------------------------- Warhammer */
+#equipped.armWarhammer #swordHand {
+  top: 14px;
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  left: -3px; }
+
+#equipped.armWarhammer #swordHand i.p1 {
+  height: 160px;
+  top: -62px;
+  border-radius: 0 0 10px 10px;
+  width: 11px; }
+
+#equipped.armWarhammer #swordHand i.p2 {
+  height: 70px;
+  top: -58px;
+  width: 70px;
+  border-radius: 0; }
+
+/* ---------------------------- BattleAxe */
+#equipped.armBattleAxe #swordHand {
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  top: 18px;
+  left: 15px; }
+
+#equipped.armBattleAxe #swordHand i.p1 {
+  height: 150px;
+  top: -50px;
+  border-radius: 10px;
+  width: 10px; }
+
+#equipped.armBattleAxe #swordHand i.p2 {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #999;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: none;
+  transform: rotate(-90deg);
+  top: -60px;
+  left: -10px; }
+
+#equipped.armBattleAxe #swordHand i.p3 {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #999;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: none;
+  transform: rotate(90deg);
+  top: -60px;
+  left: 30px; }
+
+/*# sourceMappingURL=stickman.css.map */

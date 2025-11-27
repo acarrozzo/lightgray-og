@@ -1,0 +1,20 @@
+body { color:#59595A;background:#D2D0CD;font-family: 'Raleway', Arial, Helvetica, sans-serif; font-size:12px; line-height:150%; margin:20px; }
+
+.login {
+width: 260px;
+overflow: hidden;
+margin: auto;text-align:center;
+}
+
+span { float: left; margin: 5px 0; width: 180px; }
+input { font-size:14px; border: 3px solid #EFEFF0; padding: 4px; width: 190px;background:#FFFFFF; }
+p.lft { clear: both; float: left; margin: 5px 0; padding: 5px 0; width: 70px;}
+input.btn , a.btn { clear: both; padding: 4px 0; text-align:center; text-decoration: none; color: #89898A; float:left; margin: 15px 0 0 ; background: #FFFFFF;width: 260px;font-family: 'Raleway', Arial, Helvetica, sans-serif!important;}
+.btn.login {padding:20px 0;border:none;}
+input.btn:hover, a.btn:hover { background:#EFEFF0; }
+p span { font-size: 22px; font-weight: bold; padding: 10px 0; width: 100%; }
+.stats { float: left; list-style: none outside none; padding: 0; width: 90px; }
+.stats li { }
+.stats h3 { font-size: 18px; font-weight: normal; }
+.btn.logout { bottom: 10px; left: 0; position: absolute; }
+h3 { font-size: 24px; margin: 10px 0 0; }

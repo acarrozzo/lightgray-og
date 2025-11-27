@@ -1,0 +1,1806 @@
+/* LG RPG CSS Document - MAIN ---- */
+* {
+	padding: 0;
+	margin: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html { // CORE HTML
+	font-size: 14px;
+	line-height: 1.5rem;
+}
+body {
+	color: $darkgray;
+	background: $ddddgray;
+	color: $lightgray;
+	cursor: default;
+	overflow-x: visible;
+	//	font-size: 1rem;
+	line-height: 1.5rem;
+}
+body li {list-style:none;}
+/* ---------- SVG MAIN */
+svg {
+	max-height: 10rem;
+	.small & {
+		max-height: 7rem;
+		height: 7rem;
+	}
+	.roomIcon & {
+		max-height: 9rem;
+		height: 9rem;
+	}
+	.big & {
+		max-height: 10rem;
+		height: 10rem;
+	}
+	.big2 & {
+		max-height: 15rem;
+		height: 15rem;
+	}
+	.big3 & {
+		max-height: 20rem;
+		height: 20rem;
+	}
+	.menu & {
+		max-height: 2.6rem;
+		-webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+		filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+	}
+	.skills-spells & {
+		float: left;
+		margin: 1rem 2rem 8rem 0;
+		width: 7rem;
+		max-height: initial;
+	}
+	.npc & {
+		float: right;
+		margin: 1rem -1rem 2rem 0;
+		width: 40%;
+		max-height: initial;
+		.end & {
+			width: 25%;
+			margin-top: 0;
+			opacity: 0.5;
+		}
+	}
+	.skills-spells .disable & {
+		margin-bottom: 2rem;
+	}
+	.lg-logo & {
+		max-height: 7rem;
+		margin: 2rem 0 3rem;
+	}
+}
+.icon {
+	h2 &,
+	h3 & {
+		float: left;
+		min-width: 4.2rem;
+		margin-right: 0.5rem;
+	}
+	h3 & {
+		min-width: 3.2rem;
+	}
+}
+//  ---------------------------------- SCROLLBAR STYLE
+section::-webkit-scrollbar {
+    width: 12px;
+}
+section::-webkit-scrollbar-thumb {
+    background: $gray;
+}
+section::-webkit-scrollbar-track {
+    background: $darkergray;
+}
+[data-pop="active"] {
+    top: 80px;
+}
+
+/* ---------------MAIN */
+.inline {display: inline;}
+.inline-block {display: inline-block;}
+.hide {display:none;}
+.hide-on-mobile {display:none;}
+.disable {
+    opacity: 0.2;
+    pointer-events: none;
+}
+.flex {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+body, input, button {
+-webkit-appearance:none; // removes default browser styling
+/*
+font-family: 'Arial', serif;
+font-family: 'Droid Serif', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Sorts Mill Goudy', serif;
+font-family: 'Helvetica', serif;
+font-family: 'Blinker', sans-serif;
+font-family: 'Milonga', sans-serif, serif;
+font-family: 'Kumar One Outline', cursive;
+font-family: 'Medula One', cursive;
+font-family: 'Katibeh', cursive;
+font-family: 'Press Start 2P', sans-serif;
+font-family: 'Forum', serif;
+font-family: 'Averia Serif Libre', serif;
+font-family: 'Megrim', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Rubik', serif;
+font-family: 'Girassol', serif;
+font-family: 'IM Fell English', serif;
+font-family: 'Londrina Solid', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Germania One', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+font-family: 'Inter', sans-serif;
+}
+
+form, p, span {margin:0;padding:0;}
+#container .clear {clear:both;}
+#container .right {float:right;}
+#container .left {float:left;}
+#container .none {float:none;}
+#container .center {text-align:center;}
+#container .alignL {text-align:left;}
+#container .alignR {text-align:right;}
+
+/* --------------- HEADERS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: -.03em;
+	letter-spacing: -.01em;
+}
+h1, .h1 {
+	font-size: 3rem;
+	line-height: 3rem;
+}
+h2, .h2 {
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+}
+h3, .h3 {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+h4, .h4 {
+	font-size: 1.75rem;
+	line-height: 1.9rem;
+}
+
+h5, .h5 {
+	font-size: 1.44rem;
+	line-height: 1.6rem;
+}
+
+h6, .h6 {
+	font-size: 1.4rem;
+}
+p {
+	font-size: 1rem;
+}
+/* --------------- LIST ITEMS */
+ul {
+	display: block;
+	overflow: hidden;
+	margin: 0 0 10px;
+	padding: 0;
+}
+li a {
+	float: left;
+	display: block;
+	background: #ddd;
+	list-style: none;
+	margin: 0;
+	padding: 0px 5px;
+}
+/* ------------------------------------ CORE */
+.btn, button, input {
+	@include border-radius(4px);
+	cursor: pointer;
+	clear: both;
+	display: inline-block;
+	text-decoration: none;
+	text-shadow: 0 0 4px rgba(0,0,0,.6);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	background: #aaa;
+	border: none;
+	color: $white;
+	fill:$white;
+	margin: 0.4rem 0;
+	padding: .6rem 1rem;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	transition: all .1s ease;
+	&:hover {
+		//opacity: .8;
+		transform: scale(1.05);
+	}
+	&.text {
+		background: none;
+		margin: 0;
+		padding: 0;
+		text-decoration: underline;
+		font-size: inherit;
+		text-shadow: none;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	&.small {
+		//font-size: .85rem;
+		padding: .3rem 1rem;
+	}
+	.quickBox & {
+		margin: 0;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		width: 100%;
+		text-transform: capitalize;
+	}
+	&.btnIcon {
+		align-items: center;
+		text-align: left;
+		position: relative;
+		padding-right: 2.7rem;
+		svg {
+			max-height: 1.4rem;
+			position: absolute;
+			right: 0.7rem;
+			top: 50%;
+			transform: translate(0, -50%);
+			//fill:$white;
+		}
+	}
+}
+.small {font-size:.85rem;}
+.big {font-size:1.2rem;}
+
+/* --------------- TITLE/LOGIN PAGE */
+#title {
+	margin: 0 auto;
+	text-align: center;
+	padding: 2rem;
+	max-width: 84rem;
+	.chest svg{
+		margin: 5rem 0;
+	}
+	.module.login a.btn {
+		padding: 4px 10px;
+		text-decoration: none;
+		color: $ddgray;
+		float: left;
+		margin: 10px 10px 0 0;
+	}
+	.create-new {
+		margin-top: 1rem;
+		display: block;
+	}
+	input {
+		width: 100%;
+		text-align: center;
+		&.inset {
+			box-shadow: 0 0 0.5rem inset rgba(0, 0, 0, 0.3);
+			text-shadow: none;
+		}
+	}
+	input[type=radio] {
+		-webkit-appearance: checkbox;
+		width: auto;
+	}
+	input[type=radio]:checked {
+		background: red;
+	}
+	/* ---------- CLASS SELECT - ADD BACK IN WHEN IMPLEMENTED
+	.class-select {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		gap: 8px;
+		label {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: 32%;
+			gap: 10px;
+			background: $darkestgray;
+			padding: 8px;
+			cursor: pointer;
+			text-align: left;
+			border-radius: 4px;
+			&:hover {
+				background: $darkergray;
+			}
+			span {
+				width: 100%;
+			}
+			&:has(input[type=radio]:checked) {
+				background: $darkblue;
+			}
+		}
+	}
+	*/
+	.inputs {
+		max-width: 32rem;
+		margin: 0 auto;
+	}
+	form {
+		margin: 0 auto 4rem;
+	//	padding: 0 0 4rem;
+	//	border-bottom: solid 1px $ddgray;
+	}
+	.login p.alert {
+		display: block;
+		margin: 50px auto;
+	}
+
+	strong {
+		font-size: 3.2rem;
+		line-height: 4.3rem;
+		color: #70b9ed;
+	}
+}
+// - End Title Page
+
+/* --------------- Kill List Menu */
+.rare {
+	width: 1.2rem;
+    height: 1.2rem;
+    color: $darkergray;
+    background:$gold;
+    border-radius: .2rem;
+    float: left;
+    margin: 0.3rem 0.4rem 0 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.levelrange {
+	display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0 1rem;
+}
+.elvl:before {
+	content: 'lvl ';
+	font-size: 1.2rem;
+}
+
+/* ---------------COMPASS */
+#compass {
+	svg {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	span {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		display: inline;
+		color: $gray;
+		width: 45px;
+		height: 45px;
+		opacity: .1;
+		transition: all .1s ease;
+		&.active {
+			opacity: 1;
+			fill: $gray;
+			&:hover {
+				transform: scale(1.2);
+				opacity: 1;
+			}
+		}
+	}
+	input, button {
+		margin: 0;
+		padding: 0;
+		border-radius: 50%;
+		height: 45px;
+		width: 45px;
+		background: none;
+		box-shadow: none;
+		text-indent: 0;
+		position: relative;
+		z-index: 1;
+		font-size: 22px; //need pixel not rem for scalable compass?
+	//	font-size: 1.6rem; //need pixel not rem for scalable compass - seems to work ok?
+		text-shadow: 0 0 5px #000;
+		text-transform: uppercase;
+		text-align: center;
+		// opacity: 0.9;
+		font-weight: 700;
+		color:$white;
+		transition: all .1s ease;
+		&:hover {
+			transform: scale(1.1);
+			opacity: 1;
+		}
+	}
+	i {
+		position: relative;
+		font-style: normal;
+	}
+	.nw {
+		left: -135px;
+		bottom: 176px;
+	}
+	.n {
+		bottom: 205px;
+	}
+	.ne {
+		right: -135px;
+		bottom: 176px;
+	}
+	.w {
+		left: -190px;
+		bottom: 110px;
+	}
+	.e {
+		right: -190px;
+		bottom: 110px;
+	}
+	.sw {
+		left: -140px;
+		bottom: 45px;
+	}
+	.s {
+		bottom: 15px;
+	}
+	.se {
+		right: -140px;
+		bottom: 45px;
+	}
+	.u {
+		left: 5%;
+		bottom: 150px;
+		right: initial;
+	}
+	.d {
+		left: 5%;
+		bottom: 70px;
+		right: initial;
+	}
+}
+.updown {
+	text-align: center;
+	input {
+		padding: 0 0 2rem;
+	}
+}
+
+/* ---------- GOLD CHEST DISPLAY */
+.goldchestopen {background:$yellow;border:15px solid $gold;color:$ddgray;margin:5px 0;padding:15px;position:relative;font-weight:900;}
+/* ---------- CUSTOM BUTTONS */
+input.equipBtn {width: 2.8rem;padding: 0.3rem 0.3rem;background: $gold;}
+input.mountBtn {width:3.9rem;padding:0.3rem 0.3rem;background: $gold;}
+input.viewBtn {width:3.5rem;padding:0.3rem 0.3rem;background: $gold;}
+input.eatBtn {width:2rem;padding:0.3rem 0.3rem;background: $gold;}
+input.drinkBtn {width:2.6rem;padding:0.3rem 0.3rem;background: $gold;}
+input.activateBtn {width:3.7rem;padding:0.3rem 0.3rem;background:$gold;}
+input.buyBtn {width:2.4rem;padding:0.3rem 0.3rem;background: $gold;}
+input.sellBtn {width: 1.8rem;padding: 0.2rem 0.2rem;background: 0 0;color: $dgray;}
+
+/* ---------- SKILLS MENU */ 
+.descrip {
+	background: $darkestgray;
+	margin: 0 0 1rem;
+	padding: 1rem;
+}
+.spCount {
+	right: 2rem;
+	top: 0;
+	position: sticky;
+	padding: 1rem 2rem;
+	background: $dddgray;
+	box-shadow: 0 0 5px $ddgray;
+	float: right;
+}
+/* ---------- CHAR CARD in CHAR MENU */ 
+.card {
+	float: left;
+	width: 15rem;
+	height: 22rem;
+	margin: 0.5rem 2rem 0rem 0;
+	border-radius: 2rem;
+	padding: 1rem;
+	svg {
+		max-height: initial;
+	}
+}
+/* ---------- equipped item in inventory */
+.equipped {
+    cursor: default;
+    display: inline-block;
+    margin: 0.3rem 0 0.3rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1rem;
+    background: $white;
+    color: #000;
+    padding-left: 10rem;
+    margin-left: -10rem;
+}
+// ---------- MAX RING DISPLAY - UPDATE THIS
+.maxRing {
+    width: 25%;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+/* --------------- COMMAND ICON */
+.command {
+	margin: 3rem 0 0;
+	padding-top: 0.3rem;
+	display:flex;
+    border-top: solid 1px $gray;
+    text-transform: uppercase;
+    width: 100%;
+	justify-content: space-between;
+}
+/* ---------------HUD STATS */
+.maxstat {float:right;}
+
+/* --------------- QUESTS  */
+#quests {
+	.completed {
+		opacity: .5;
+		display: block;
+	}
+	h2 i {
+		display: block;
+		float: none;
+		font-size: 2rem;
+		color: $lightgray;
+	}
+	.checkbox {
+		float: left;
+		width: 1.6rem;
+		margin: 0 0.5rem 0 0;
+	}
+	.q0 {background:$darkgray;}
+	.q1 {background:$gold;}
+	.q2 {background:#87d63f;}
+	.questCircles {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		gap: 0.3rem;
+		padding: 1rem 0;
+	}
+	.qbox { 
+		width: 2rem;
+		text-align: center;
+		color: $darkestgray;
+		/* border-radius: 50%; */
+		/* display: inline-block; */
+		aspect-ratio: 1/1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0.2rem;
+		&:hover {opacity:.9;}
+	}
+	.questLvlBox {
+		text-transform: uppercase;
+		color:$gray;
+		}
+	.num {
+		margin-right: 0.5rem;
+		border-right: $gray 1px solid;
+		padding: 0px 0.5rem 0 0;
+		width: 5rem;
+		display: block;
+		float: left;
+		text-align: left;
+		color: $gray;
+		DISPLAY:NONE;
+	}
+	.grid2 { // --- 2 column layout
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 1rem;
+	}
+}
+/* --------------- WORLD TELEPORT  */
+.mapCubes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.3rem;
+	margin: 1rem auto;
+	max-width: 33rem;
+	.mapCube {
+		padding: .4rem;
+		text-align: center;
+		flex-basis: calc(33.333% - 0.2rem);
+		margin: 0;
+		border-radius: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-wrap: wrap;
+		line-height: 1.2rem;
+		min-height: 3.6rem;
+		&.square {
+			aspect-ratio: 1 / 1;
+		}
+		&.half {
+			flex-basis: calc(16.5% - 8px);
+			font-size: 12px;
+		}
+	}
+}
+/* --------------- MENU ACTION - IN FEED */
+.menuAction {
+	padding: 0.5rem 1rem;
+	border: dashed .1rem;
+	strong {
+		font-size: 2rem;
+	}
+	i {
+		display: block;
+	}
+	em {
+		font-style: normal;
+	}
+}
+/* ---------- SIGN DISPLAY  - TO DO - REDO*/
+.direc {    
+	display: inline-block;
+    margin: .5rem 0 0;
+}
+.direc > input {    
+	margin: 0;
+    padding: 0.5rem 1rem;
+}
+.levelWin, .questWin, .battlewin, .sign, .fbox {
+	position: relative;
+	padding: 1rem;
+	color: $white;
+	background: $ddgray;
+	border: $darkestgray 1rem solid;
+	width: 100%;
+	h4 {
+		color: $gold;
+	}
+	.hilight {
+		color: $gold;
+	}
+	& + .levelWin {
+		//margin-top: -1rem;
+	}
+}
+.levelWin {
+	//background: $green;
+	//background: #87d63f;
+	border-color: $green;
+	border-color: $yellow;
+}
+.battlewin {
+	border-color: $green;
+	h4 {
+		padding: 12px 0;
+	}
+	span {
+		display: inline-block; // knocks + item on it's own line
+		display: block;
+		margin-top: 2px;
+	}
+}
+.sign {
+	background: $dbrown;
+	border:0;
+}
+/* --------------- MENU ICON */
+.menu {
+    width: 100%;
+    bottom: 0;
+	background: $ddgray;
+	overflow:hidden;
+	position: fixed;
+    left: 0;
+}
+.subMenu {
+    position: absolute;
+    width: 100%;
+	bottom: 6rem;
+    background: $darkestgray;
+    left: 0;
+    line-height: 2em;
+}
+.menuIcon {
+	text-align: center;
+	text-decoration: none;
+	width: 20%;
+	z-index: 2;
+	position: relative;
+	float: left;
+	margin: 0;
+	height: 60px;
+	height: 6rem;
+	padding: 0.8rem 0 0;
+	span {
+		color: $lgray;
+		position: absolute;
+		right: 0;
+		bottom: 0.4rem;
+		left: 0;
+		text-shadow: 0px 0px 5px $black, 0px 0px 10px $black;
+	}
+	&:hover{
+		background: $dddgray;
+	}
+	&.active {
+		background: $darkestgray;
+		span {
+			color: $white;
+		}
+	}
+}
+.menuIcon2 {
+	padding: 5px 12px;
+	padding: 0.5rem 1.7rem;
+	float: left;
+	cursor: pointer;
+	border-right: solid 0.2rem $darkergray;
+	&:hover {
+		background: $ddgray;
+	}
+	&.active {
+		color: $gold;
+		background:$darkergray;
+	}
+}
+
+[data-pop="stats"] .subMenu .active {color: $purple;}
+[data-pop="inv"] .subMenu .active {color: $green;}
+[data-pop="world"] .subMenu .active {color: $blue;}
+[data-pop="action"] .subMenu .active {color: $red;}
+
+// -------------- ARTICLE / toggles to show and hide / for shop and evolve
+article {
+	display: none;
+	height: calc(100vh - 200px);
+	margin: 0;
+	padding: 0 1rem 6.4rem;
+	width: 100%;
+	background: $darkergray;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	height: 100vh;
+	position: absolute;
+	bottom: 0;
+	span {
+		color: $gray;
+	}
+	&.active {
+		display: block;
+	}
+}
+
+// -------------- PANEL / slides in from menu
+.panel {
+	width: 100%;
+	height: 100%;
+	bottom: -100%;
+	position: fixed;
+	background:$darkergray;
+	color: $lightgray;
+	right: 0;
+	&.active {
+		bottom: 0;
+	}
+	&.active.custom-input {
+		position: absolute;
+		z-index: 1;
+		height: calc(100vh - 9rem);
+		padding: 2rem 0;
+		top: 0;
+	}
+	&.shop {
+		padding-top: 2rem;
+	}
+}
+section {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+	padding: 3rem 2rem 15rem;
+	padding-top: 0;
+	position: relative;
+	}
+// FLEX CONTAIN - used in quests and stats display
+.flex-contain {
+	display: flex;
+	flex-wrap: wrap;
+	>div {
+		width: 100%;
+		position: relative;
+	}
+	.stats &>div:nth-child(1) {
+		order: -2;
+	}
+	.stats &>div:nth-child(2) {
+		order: 0;
+	}
+	.stats &>div:nth-child(3) {
+		order: -1;
+	}
+	.tops { // active quest room
+		order: -1;
+		margin: 0 -2rem 4rem;
+		padding: 8rem 2rem 6rem;
+		min-width: calc(100% + 4rem);
+		background :$dddgray;
+		border: 0;
+	}
+	.notstarted {
+		//	order: 1; !!!!!! MAYBE PUT THIS BACK ON FOR QUEST ORDER
+		// opacity:.5;
+	}
+	.end {
+		order: 2;
+		opacity: .5;
+		h2 {
+			font-size: 3rem;
+			line-height: 3rem;
+		}
+	}
+}
+
+
+// --------------------------- CHAT
+.lvl-0 { color: $lgray; }
+.lvl-10 { color: $green; }
+.lvl-20 { color: $blue; }
+.lvl-30 { color: $purple; }
+.lvl-40 { color: $gold; }
+.lvl-50 { color: $red; }
+.lvl-60 { color: $white; }
+
+#chat-all {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+	.chat-message {
+		margin-top:.5rem;
+	}
+	.date-divider {
+		margin-top:2rem;
+	}
+	#chat-box {
+		width: 100%;
+		height: 20rem;
+		overflow-y: auto;
+		border: 1px solid #ccc;
+		padding: 1rem;
+		background: #111;
+		color: #fff;
+
+	}
+	input {
+		background: #fff;
+		color:#000;
+		text-shadow: none;
+		width: 80%;
+	}
+}
+.timestamp {
+	color:$dgray;
+	font-size: 0.8rem;
+	float: right;
+}
+.chat-bubble {
+    border: $purple solid 0.1rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    margin: 1rem 0;
+}
+#room-users-container {
+    width: 100%;
+    text-align: center;
+	gap: .5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	button {
+		background-color: $white;
+		color: $dgray;
+		text-shadow: none;
+	}
+	form {
+		width: 100%;
+	}
+}
+.user-card {
+    background: $dddgray;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid $blue;
+    border-radius: .5rem;
+}
+// --------------------------- ITEM BOX
+.item-flex {
+	display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.itembox {
+	text-align: left;
+	width: calc(50% - 0.5rem);
+	text-shadow: none;
+	position: relative;
+	margin: 0;
+	background: none;
+	border: solid $gray .1rem;
+	&:hover {
+		background: rgba(0, 0, 0, .2);
+		border: solid $lgray .1rem;
+		top: 1px;
+	}
+	.icon {
+		float: right;
+		width: 4rem;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	strong {
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+		font-weight: 500;
+	}
+	.qty {
+		position: absolute;
+		right: 0.3rem;
+		bottom: 0.1rem;
+	}
+}
+// end itembox
+
+// --- buff disabled and active blinking counters
+.disabled {opacity:.2;pointer-events:none;}
+.disabled2 {opacity:.8;pointer-events:none;}
+.actives {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    background: rgba(80,80,80,0.8);
+    top: 0;
+    border-radius: 50px;
+    line-height: 5.5rem;
+    z-index: 1;
+}
+// --- blink
+@keyframes blink {
+  50% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.7;
+  }
+}
+.blink {
+  animation: blink 2s step-start 0s infinite;
+  -webkit-animation: blink 2s step-start 0s infinite;
+}
+
+// --- group box
+.gbox {
+    border-bottom: solid 0.5rem $darkestgray;
+    padding: 2rem 0;
+		display: inline-block;
+		width:100%;
+		&:last-child {
+		    border-bottom: 0;
+		}
+		#quests &:not(:first-child) {
+			padding-top:8rem;
+		}
+		#quests &.end {
+			padding-top:2rem;
+		}
+}
+.gslice {
+	padding:2rem 0;
+	border-top: solid 0.1rem $darkestgray;
+	margin:1rem 0;
+	&:first-of-type {border:0;}
+	.skills-spells & {
+		clear:both;
+	}
+}
+.padd {
+	padding:1rem 0;
+	//overflow: hidden;
+}
+.padd2 {
+	padding:2rem 0;
+}
+.padd3 {
+	padding:3rem 0;
+}
+.padd-top {
+	padding-top:1rem;
+}
+.padd-bottom {
+	padding-bottom:1rem;
+}
+.closeMenu {
+	position: absolute;
+	font-size: 2rem;
+	z-index: 1;
+	background: $ddgray;	
+	width: 4rem;
+	text-align: center;
+	padding: 1rem;
+	line-height: 0;
+	cursor: pointer;
+	top: 0;
+	right: 0;
+	box-shadow: 0 0 1rem $ddgray;
+}
+.topright {
+	position: absolute;
+	top: 1rem;
+	right: 0;
+}
+.box {
+	background: $darkestgray;
+	padding: 1rem 1.5rem;
+	margin-right: 0;
+	top: 0;
+}
+.sticky {
+	top: 0;
+	position: sticky;
+	float: right;
+	right: 3rem;
+}
+.tabs a {
+	margin: 1.5rem 0 0;
+    padding: .2rem 1rem;
+}
+// ------------ Top right badges
+.badges {
+	position: absolute;
+    top: calc(-100vh - -7rem);
+    right: 1rem;
+    margin-top: 260px;
+    z-index: -1;
+}
+.badge {    
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    box-shadow: 0 0 1rem $ddgray;
+    border: solid 0.1rem $lightgray;
+    /* border-radius: 50%; */
+    position: relative;
+		.text {
+			position: absolute;
+			font-size: 0.9rem;
+			line-height: 1rem;
+			text-align: center;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			bottom: -1.6rem;
+			left: 0;
+			right: 0;
+			color: $white;
+			width: 100%;
+		}
+	}
+.alert {
+    position: absolute; 
+	width: 1.6rem;
+	height: 1.6rem;
+	padding: 0.3rem 0;
+    line-height: 1rem;
+    border-radius: 50%;
+    top: -0.5rem;
+    right: -0.5rem;
+    box-shadow: 0rem 0rem 0.5rem $ddgray;
+    text-align: center;
+    background: $white;
+    color: $ddgray;
+	}
+// ----- QUICK BOX - bottom right quick buttons in nav
+.quickBox {
+    position: absolute;
+    width: 11rem;
+	bottom: 0;
+    right: 0;
+    max-height: 100%;
+    padding: 1rem 1rem;
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+	align-items: center;
+}
+// ------------- HP and MP Bars
+.bar {
+	background: $darkgray;
+	color: $lightgray;
+	height: 1.4rem;
+	overflow: hidden;
+	margin: 0.4rem 0;
+	position: relative;
+	border-radius: .2rem;
+	display: flex;
+	align-items: center;
+	.mpBar {
+		width: 90%;
+		height: 1rem;
+	}
+}
+.barMid {
+	position: absolute;
+	height: 100%;
+	>span {
+		padding-left: 0.5rem;
+	}
+}
+.maxxer {
+	position: absolute;
+	right: 0.5rem;
+}
+.barStat {
+	z-index: 1;
+	padding: 0 0.5rem;
+	display: flex;
+}
+// ----------------------------------- LAST ACTION RED BOX
+.lastActionBox {
+	border-bottom: solid .2rem $red;
+	margin: 0 -2rem;
+	background: $ddgray;
+	padding: 2rem;
+}
+
+// ----------------------------------- main game CONTAINER
+#container {
+	.module {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		z-index: 5;
+	}
+	.module.action {
+		position: absolute;
+		bottom: 0;
+	}
+	.module.feed {
+		top: 0px;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+// ----------------------------------- MAP
+#map {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+	cursor: pointer;
+	border:20px solid rgba(250, 250, 250, 0);
+	@include border-radius(50%);
+	@include transition(all,.5s);
+	&.active {
+		position: fixed;
+		top:0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		border:0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: $ddgray;
+		background-position: center;
+		z-index:7;
+		@include border-radius(0);
+	}
+}
+/* --------------- top left links in nav */
+.navquicklinks {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	z-index: 1;
+}
+/* --------------- NAV */
+.nav {
+	position: relative;
+	bottom: 6rem;
+	height: 260px;
+	z-index: -2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $dddgray;
+	p {
+		// bottom: 115px;
+		// position: fixed;
+		// left: 20px;
+		// font-size: 12px;
+	}
+	p.danger {
+		bottom: 75px;
+		left: 20px;
+	}
+}
+// bottom left character and bar display
+.navhud {
+	position: absolute;
+	left: 1rem;
+	bottom: 0.5rem;
+	width: 30%;
+}
+// nav center with D pad
+.nav-center {
+	position: relative;
+	height: 260px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: -1;
+}
+// ----------------------------------- BATTLE HUD
+#hud {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	&.inBattle #uBox {
+		right: 0%;
+	}
+	&.active {
+		left: 0;
+		#uBox {
+			right: 0%;
+		}
+	}
+	h3 {
+		font-size: 2.4rem;
+		margin: 0;
+		letter-spacing: -0.02em;
+		line-height: 1em;
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: inherit;
+	}
+	.maxstat {
+		float: left;
+		position: relative;
+	}
+	.magicarmorBox {
+		top: 2.4rem;
+		right: 2.6rem;
+	}
+}
+/* --------------- bottom action area when in battle */
+.battleBlock {
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	z-index: -1;
+	background: $darkestgray;
+	position: fixed;
+	bottom: 6rem;
+	.gbox {
+		padding-top: 0;
+	}
+	.battlehide {
+		display: none; // hides craft button from bag box in battle tabs
+	}
+	input {
+		width: 100%;
+	}
+	.spellBtnBox {
+		display: inline-block;
+		position: relative;
+		color: $white;
+		background: pink;
+	}
+	.retreatBtn {
+		background: $ddddgray;
+		width: auto;
+		padding: 4px 9px;
+		display: block;
+		color: $gray;
+		font-size: 12px;
+		position: absolute;
+		top: 10px;
+		right: 5px;
+	}
+}
+/* --------------- BATTLETABS - action, magic, bag  */
+.battleTabs {
+	position: absolute;
+	top: -3.6rem;
+	width: 100%;
+	line-height: 1.4rem;
+	a {
+		width: 30%;
+		width: 32%;
+		border-radius: 10px 10px 0 0;
+		background: $ddgray;
+		margin: 0;
+		padding: 1.2rem 0;
+	}
+	i {
+		display: block;
+		font-size: 22px;
+		position: relative;
+		top: 4px;
+	}
+}
+.battleTab {
+	display: none;
+	padding: 1rem;
+	overflow: auto;
+	height:280px;
+	z-index: 0;
+	position: relative;
+	text-align: left;
+	&.active {
+		display: block;
+	}
+}
+[data-link="battle-actions"] {color:$red;
+	&.active {background:$red;color:$white;border:0;}
+}
+[data-link="battle-actions"].dex {color:$green;
+	&.active {background:$green;color:$white;border:0;}
+}
+[data-link="battle-magic"] {color:$blue;
+	&.active {background:$blue;color:$white;border:0;}
+}
+[data-link="battle-bag"] {color:$gold;
+	&.active {background:$gold;color:$white;border:0;}
+}
+
+[data-pop] {    transition: .1s;}
+[data-pop="battle-actions"] {border-top: solid 5px $red;}
+[data-pop="battle-actions"].dex {border-top: solid 5px $green;}
+[data-pop="battle-magic"] {border-top: solid 5px $blue;}
+[data-pop="battle-bag"] {border-top: solid 5px $gold;}
+
+/* --------------- BATTLEBOX // Split battle between user and enemies  */
+.battleFrame {
+    display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.flip {
+	transform: scaleX(-1);
+}
+.battleBox {
+	overflow: hidden;
+	width: 50%;
+	order: 2;
+	text-align: left;
+	min-height: 10rem;
+	display: inline-block;
+	padding:1rem 0;
+	line-height: 1.3em;	
+	&:nth-child(1) {
+		padding-right:1rem;
+	}	
+	&:nth-child(2) {
+		padding-left:1rem;
+	}	
+	.uIconBox {
+		display: flex;
+		float: right;
+		gap: .5rem;
+	}
+	.eIconBox {
+		display: flex;
+		float: left;
+		gap: .5rem;
+		transform: scaleX(-1);
+	}
+	.icon {
+			fill: $white;
+			display: flex;
+			height: auto;
+			&.uIcon {
+				float: right;
+				width: 6rem;
+			}
+			&.uIconAttack {
+				float: right;
+				width: 4rem;
+			}
+			&.eIcon {
+				float: left;
+				width: 6rem;
+			}
+			&.dead {
+				transform: scaleY(-1);
+				width: 8rem;
+			}
+		}
+	}
+.attackMath {
+	font-size: .8rem;
+	line-height: 1.4em;
+	display: block;
+	}
+.attackBig {
+    display: block;
+	font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+.roundSummary {
+    display: flex;
+    gap: 1rem;
+	justify-content: space-between;
+	text-align: left;
+	width: 100%;
+	.split  {
+		width:45%;
+	}
+	.bar  {
+		height:0.4rem;
+	}
+	.barMid {
+		position:relative;
+	}
+	.barStat {
+		position: absolute;
+	}
+	.flex-end {
+		justify-content: flex-end;
+	}
+}
+.multiHit {
+	display: inline-block;
+	border-top: solid .05rem $darkgray;
+	padding: 0.1rem 0 0;
+	font-size: 0.7rem;
+	color: $darkgray;
+	width: 100%;
+	margin-top: 1rem;
+}
+.attackCost {
+	font-size: 0.7rem;
+	color: $blue;
+}
+.magicarmorBox {
+	// position: absolute;
+	// bottom: 5.5rem;
+	// right: 0;
+	    position: absolute;
+    bottom: 3.9rem;
+    right: -4.2rem;
+    text-align: left;
+    width: 4rem;
+}
+.stats .magicarmorBox {
+	position: absolute;
+	bottom: inherit;
+	right: 0;
+	font-size: 1.4rem;
+	top: 7rem;
+}
+// -------- equipment label
+.eqpcat {    
+	color: $gold;
+    min-width: 4rem;
+    text-align: right;
+    border-left: solid 3px $darkestgray;
+    margin: 1px 2px 1px 0;
+	display:inline-block;
+}
+// -------- ENEMY BOX
+#eBox, #uBox {
+	position: relative;
+	background:$darkestgray;
+	color:$lgray;
+	top: 0;
+	padding: 2rem 1rem 0;
+	width: 50%;
+	height: 9.2rem;
+	line-height: 1.4rem;
+	float: left;
+	overflow: hidden;
+	@include transition(all,.25s);
+}
+.buffbound {
+	position: absolute;
+	top: .3rem;
+	width: 100%;
+	overflow: auto;
+	white-space: nowrap;
+	text-transform: uppercase;
+	line-height: 1.2rem;
+	display: flex;
+	gap: 0.5rem;
+	#eBox & {
+		justify-content: flex-end;
+		right: 1rem;
+	}
+}
+.buffBox {
+	border-bottom: 1px solid;
+}
+// -------- ENEMY BOX + USER BOX
+#eBox {
+	left: 0;
+	text-align:right;
+	 .bar {
+		height:2.8rem;
+		justify-content: end;
+	}
+}
+#uBox {
+    right: -50%;
+}
+.vsBox {
+	position: absolute;
+    top: -0.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: $white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: rgba(0,0,0,.3);
+}
+.lvlBox {
+	background: #f1b238;
+	color: $ddgray;
+	padding: 0 0.4rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.2rem;
+	line-height: 1.6rem;
+} // --- END ALL BATTLE STUFF
+
+// -------------------------- roomBox display
+.roomBox {
+	display: flex;
+	padding: 0.5rem 0rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	align-self: stretch;
+	.roomIconTitle {
+		display: flex;
+		align-items: center;
+	}
+	.roomTitle {display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.icon {
+		padding: 1rem 1rem 1rem 0;
+	}
+}
+// ----------------------------------- FEED MODULE-mobile
+#feed-module {
+	display: block;
+	width: 100%;
+	height: calc(100vh - 260px - 6rem);
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+    border: 0;
+	padding:0 1rem 1rem;
+	.infight & {
+		height: calc(100vh - 280px - 6rem);
+		padding:0 1rem 5rem;
+	}
+}
+
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */
+	.feedinside {
+		//padding-bottom:320px;
+	}
+}
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+	#feed-module {
+		height: -webkit-fill-available;
+	}
+	.feedinside {
+		//padding-bottom:320px;
+	}
+}
+
+// -------- RESPONSE 1000 - MAIN DESKTOP SWAP DISPLAY
+@media (min-width:1000px){
+	html {font-size: 15px;}
+	.hide-on-mobile {display: initial;}
+	.hide-on-desktop {display: none;}
+	.menu {
+		top: 0;
+		bottom: initial;
+		position: absolute;
+	}
+	#feed-module {
+		height: 100%;
+		padding-bottom: 100px;
+		.infight & {
+			height: calc(100vh - 280px);
+		}
+	}
+	#container {
+		.module.action {
+			overflow-y: hidden;
+			overflow-x: visible;
+			margin: 1rem;
+			border-radius: 1rem;
+			width: calc(50vw - 2rem);
+			height: calc(100vh - 2rem);
+		}
+		.module.feed {
+			width: 50%;
+			height: 100vh;
+			overflow: hidden;
+			right: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
+	.panel.active.custom-input {
+		top: 9rem;
+	}
+	#hud {
+		width: 50%;
+		left:initial;
+	}
+	.battleBlock {
+		width: 50%;
+		bottom: 0;
+		//pointer-events: initial;
+	} 
+	.nav {
+		position: absolute;
+		height: calc(100% - 6rem);
+		width: 100%;
+		top: 6rem;
+	}
+	.badges {
+		top: 1rem;
+		margin: 0;
+		}
+	.panel {
+		position: absolute;
+		width: 100%;
+		height:100%;
+		bottom: 100vh;
+		padding-top: 9rem;
+		&.active {
+	    bottom: 0;
+		}
+		&.shop { 
+			padding-top:8rem;
+			.closeMenu {
+				display: block;
+				top: 6rem;
+				right: 0;
+				left: initial;
+				z-index: 0;
+			}
+			 li {
+				border-bottom: 1px solid $darkestgray;
+				padding: 0.5rem 0;
+			}
+			.buyBtn {    
+				width: auto;
+				padding: 0.3rem 0.5rem;
+				margin-top: -0.1rem;
+				float: right;
+				display: block;
+				clear: both;
+			}
+		}
+		.sellPrice {float:right;color:$gold;}
+	}
+	.subMenu {
+		top: 6rem;
+		bottom:initial;
+	}
+	.closeMenu {
+		top:9rem;
+	    right: 1rem;
+	}
+} // -- END MAIN 1000px response
+
+// -------- BIG RESPONSE 1400 - wide desktop
+@media (min-width:1400px) {
+	html {
+		font-size:16px;
+	}
+	.nav-center {
+		transform: scale(1.3);
+		width: 76%;
+	}
+}
+// -------- SUPER BIG RESPONSE 2000 - Super wide desktop
+@media (min-width:2000px) {
+	html {
+		font-size: 18px;
+	}
+	.nav-center {
+		transform: scale(1.8);
+		width: 55%;
+	}
+}
+// -------- - less than 1000
+@media (max-width:1000px) {
+	.updown {
+		position: absolute;
+		left: 8px;
+		bottom: 56px;
+	}
+}
+// -------- - less than 600
+@media (max-width:600px) {
+	html {
+		font-size: 12px;
+	}
+}
+// -------- - less than 460 
+@media (max-width:460px) {
+	html {
+		font-size: 10px;
+	}
+	.nav-center {
+		transform: scale(.8);
+		width: 110%;
+		.updown {
+			left: -3rem;
+		}
+	}
+}
+// -------- - less than 340
+@media (max-width:340px) {
+	html {
+		font-size: 8px;
+	}
+}

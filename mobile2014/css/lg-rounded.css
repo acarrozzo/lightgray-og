@@ -1,0 +1,16 @@
+
+
+ul.subTabs li a,
+#dPad li,
+#roomInfo .roomImg,
+.module,
+.btn,
+#roomActions.expanded .btn p,
+.okBtn
+
+
+ {
+	
+  border-radius: 5px;
+  
+}
