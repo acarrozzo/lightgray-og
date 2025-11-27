@@ -2,7 +2,7 @@
 echo '<div id="title">
 <h1 class="">Light Gray <span class="hide">RPG</span></h1>
 <h2 class="blue">RPG</h2>
-<br><p class="">DEMO v0.1 • Last updated: 6.11.25</p>';
+<br><p class="">DEMO v0.2 • Last updated: 10.27.25</p>';
 
 // Validate session username - only show this if the user is not logged in
 if (!isset($_SESSION['username']) || !is_string($_SESSION['username']) || empty(trim($_SESSION['username']))) {
