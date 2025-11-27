@@ -20,8 +20,10 @@ chat-log.html
 
 # Database connection files (may contain credentials)
 db-connect.php
-db-connect*.php
+db-connect BACKUP.php
 _mmServerScripts/
+# But allow example files
+!db-connect.example.php
 
 # Log files (may contain sensitive runtime data)
 *.log
