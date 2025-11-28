@@ -60,7 +60,7 @@ $row = getUserData($link, $_SESSION['username']); // --- gets all user data from
     // updateStats($link, $username, $updates); // -- apply changes
     // --------------------------------------------------------------------------- LEVEL!
     if ($xp >= $nextlevel) {
-        $query = $link->query("UPDATE $user SET level = level + 1 ");
+      //  $query = $link->query("UPDATE $user SET level = level + 1 ");
 
         $updates = [ // -- set changes
             'level' => $level + 1
