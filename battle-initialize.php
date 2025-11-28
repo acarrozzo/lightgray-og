@@ -42,10 +42,10 @@
         
 // -----------------------------------  Volphina - ATTACK IN SECRET BATTLE ARENA // currently Mage Ultima
 if ($enemy == 'Volphina') {
-    // $results = $link->query("UPDATE $user SET enemyhpmax = 10000");
-    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    // $results = $link->query("UPDATE $user SET enemyatt = 1000");
-    // $results = $link->query("UPDATE $user SET enemydef = 1000");
+    // // $results = $link->query("UPDATE $user SET enemyhpmax = 10000");
+    // // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // // $results = $link->query("UPDATE $user SET enemyatt = 1000");
+    // // $results = $link->query("UPDATE $user SET enemydef = 1000");
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
         'enemyhp' => 100,
@@ -80,7 +80,7 @@ if ($enemy == 'Volphina') {
     $_SESSION['notthe'] = 1;		// make 1 when enemy doesn't have THE (ex. diablo)
 }
 // -----------------------------------  BATTLE INITIALIZE
-//$results = $link->query("UPDATE $user SET eIcon = '$enemy'");
+//// $results = $link->query("UPDATE $user SET eIcon = '$enemy'");
 
 $updates = [ // -- set changes
     'eIcon' => $enemy
@@ -91,10 +91,12 @@ updateStats($link, $username, $updates); // -- apply changes
 // ------------------------------------------------------------------------ GRASSY FIELD
 // --------------------------------------------------------------  rat
 if ($enemy == 'Rat') {
-    // $results = $link->query("UPDATE $user SET enemyhpmax = 3");
-    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    // $results = $link->query("UPDATE $user SET enemyatt = 1");
-    // $results = $link->query("UPDATE $user SET enemydef = 1");
+    // // $results = $link->query("UPDATE $user SET enemyhpmax = 3");
+    // // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // // $results = $link->query("UPDATE $user SET enemyatt = 1");
+    // // $results = $link->query("UPDATE $user SET enemydef = 1");
+
+
 
     $updates = [ // -- set changes
         'enemyhpmax' => 3,
@@ -107,10 +109,10 @@ if ($enemy == 'Rat') {
 }
 // --------------------------------------------------------------  Sand Crab
 if ($enemy == 'Sand Crab') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 2");
-    $results = $link->query("UPDATE $user SET enemydef = 2");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 3");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 2");
+    // $results = $link->query("UPDATE $user SET enemydef = 2");
 
     $updates = [ // -- set changes
         'enemyhpmax' => 3,
@@ -123,10 +125,10 @@ if ($enemy == 'Sand Crab') {
 }
 // --------------------------------------------------------------  giant rat
 if ($enemy == 'Giant Rat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 6");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 3");
-    $results = $link->query("UPDATE $user SET enemydef = 1");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 6");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 3");
+    // $results = $link->query("UPDATE $user SET enemydef = 1");
     $updates = [ // -- set changes
         'enemyhpmax' => 6,
         'enemyhp' => 6,
@@ -138,10 +140,10 @@ if ($enemy == 'Giant Rat') {
 }
 // --------------------------------------------------------------  Gator (real Gator)
 if ($enemy == 'Gator') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 100");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 8");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 100");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 8");
+    // $results = $link->query("UPDATE $user SET enemydef = 0");
 
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
@@ -156,10 +158,10 @@ if ($enemy == 'Gator') {
 // ------------------------------------------------------------------------ SPIDER CAVE
 // --------------------------------------------------------------  spider
 if ($enemy == 'Spider') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 5");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 3");
-    $results = $link->query("UPDATE $user SET enemydef = 1");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 5");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 3");
+    // $results = $link->query("UPDATE $user SET enemydef = 1");
 
     $updates = [ // -- set changes
         'enemyhpmax' => 5,
@@ -173,10 +175,10 @@ if ($enemy == 'Spider') {
 
 // --------------------------------------------------------------  scorpion
 if ($enemy == 'Scorpion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 8");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 5");
-    $results = $link->query("UPDATE $user SET enemydef = 2");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 8");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 5");
+    // $results = $link->query("UPDATE $user SET enemydef = 2");
     $updates = [ // -- set changes
         'enemyhpmax' => 8,
         'enemyhp' => 8,
@@ -188,10 +190,10 @@ if ($enemy == 'Scorpion') {
 }
 // --------------------------------------------------------------  giant spider
 if ($enemy == 'Giant Spider') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 10");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 6");
-    $results = $link->query("UPDATE $user SET enemydef = 3");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 10");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 6");
+    // $results = $link->query("UPDATE $user SET enemydef = 3");
     $updates = [ // -- set changes
         'enemyhpmax' => 10,
         'enemyhp' => 10,
@@ -204,10 +206,10 @@ if ($enemy == 'Giant Spider') {
 
 // --------------------------------------------------------------  alpha scorpion
 if ($enemy == 'Alpha Scorpion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 20");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 8");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 20");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 8");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 20,
         'enemyhp' => 20,
@@ -220,10 +222,10 @@ if ($enemy == 'Alpha Scorpion') {
 
 // --------------------------------------------------------------  scorpion guard
 if ($enemy == 'Scorpion Guard') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 30");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 10");
-    $results = $link->query("UPDATE $user SET enemydef = 8");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 30");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 10");
+    // $results = $link->query("UPDATE $user SET enemydef = 8");
     $updates = [ // -- set changes
         'enemyhpmax' => 30,
         'enemyhp' => 30,
@@ -235,10 +237,10 @@ if ($enemy == 'Scorpion Guard') {
 }
 // --------------------------------------------------------------  mammoth scorpion
 if ($enemy == 'Mammoth Scorpion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 70");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 16");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 70");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 16");
     $updates = [ // -- set changes
         'enemyhpmax' => 70,
         'enemyhp' => 70,
@@ -250,10 +252,10 @@ if ($enemy == 'Mammoth Scorpion') {
 }
 // --------------------------------------------------------------  scorpion queen
 if ($enemy == 'Scorpion Queen') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 50");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 50");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -265,10 +267,10 @@ if ($enemy == 'Scorpion Queen') {
 }
 // --------------------------------------------------------------  scorpion king
 if ($enemy == 'Scorpion King') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -281,10 +283,10 @@ if ($enemy == 'Scorpion King') {
 // ------------------------------------------------------------------------ BAT CAVE
 // --------------------------------------------------------------  bat
 if ($enemy == 'Bat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 2");
-    $results = $link->query("UPDATE $user SET enemydef = 2");
+  //  // $results = $link->query("UPDATE $user SET enemyhpmax = 3");
+  //  // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+  //  // $results = $link->query("UPDATE $user SET enemyatt = 2");
+  //  // $results = $link->query("UPDATE $user SET enemydef = 2");
     $updates = [ // -- set changes
         'enemyhpmax' => 3,
         'enemyhp' => 3,
@@ -297,10 +299,10 @@ if ($enemy == 'Bat') {
 }
 // --------------------------------------------------------------  golden bat
 if ($enemy == 'Golden Bat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 20");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 8");
-    $results = $link->query("UPDATE $user SET enemydef = 2");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 20");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 8");
+    // $results = $link->query("UPDATE $user SET enemydef = 2");
     $updates = [ // -- set changes
         'enemyhpmax' => 20,
         'enemyhp' => 20,
@@ -315,10 +317,10 @@ if ($enemy == 'Golden Bat') {
 }
 // --------------------------------------------------------------  salamander
 if ($enemy == 'Salamander') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 30");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 10");
-    $results = $link->query("UPDATE $user SET enemydef = 6");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 30");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 10");
+    // $results = $link->query("UPDATE $user SET enemydef = 6");
     $updates = [ // -- set changes
         'enemyhpmax' => 30,
         'enemyhp' => 30,
@@ -332,10 +334,10 @@ if ($enemy == 'Salamander') {
 
 // --------------------------------------------------------------  goblin
 if ($enemy == 'Goblin') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 20");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 8");
-    $results = $link->query("UPDATE $user SET enemydef = 6");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 20");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 8");
+    // $results = $link->query("UPDATE $user SET enemydef = 6");
     $updates = [ // -- set changes
         'enemyhpmax' => 20,
         'enemyhp' => 20,
@@ -347,10 +349,10 @@ if ($enemy == 'Goblin') {
 }
 // --------------------------------------------------------------  goblin bandit
 if ($enemy == 'Goblin Bandit') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 12");
-    $results = $link->query("UPDATE $user SET enemydef = 8");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 12");
+    // $results = $link->query("UPDATE $user SET enemydef = 8");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -362,10 +364,10 @@ if ($enemy == 'Goblin Bandit') {
 }
 // --------------------------------------------------------------  goblin chief
 if ($enemy == 'Goblin Chief') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 120");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 120");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 120,
         'enemyhp' => 120,
@@ -378,10 +380,10 @@ if ($enemy == 'Goblin Chief') {
 
 // --------------------------------------------------------------  cow
 if ($enemy == 'Cow') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 20");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 5");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 20");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 5");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 20,
         'enemyhp' => 20,
@@ -393,10 +395,10 @@ if ($enemy == 'Cow') {
 }
 // --------------------------------------------------------------  wild boar
 if ($enemy == 'Wild Boar') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 8");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 8");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -408,10 +410,10 @@ if ($enemy == 'Wild Boar') {
 }
 // --------------------------------------------------------------  snake
 if ($enemy == 'Snake') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 15");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 15");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 15");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 15");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 15,
         'enemyhp' => 15,
@@ -423,10 +425,10 @@ if ($enemy == 'Snake') {
 }
 // --------------------------------------------------------------  hill ogre
 if ($enemy == 'Hill Ogre') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 100");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 100");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
         'enemyhp' => 100,
@@ -440,10 +442,10 @@ if ($enemy == 'Hill Ogre') {
 // ------------------------------------------------------------------------ OGRE CAVE
 // --------------------------------------------------------------  hob goblin
 if ($enemy == 'Hob Goblin') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 30");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 9");
-    $results = $link->query("UPDATE $user SET enemydef = 7");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 30");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 9");
+    // $results = $link->query("UPDATE $user SET enemydef = 7");
     $updates = [ // -- set changes
         'enemyhpmax' => 30,
         'enemyhp' => 30,
@@ -455,10 +457,10 @@ if ($enemy == 'Hob Goblin') {
 }
 // --------------------------------------------------------------  orc
 if ($enemy == 'Orc') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 11");
-    $results = $link->query("UPDATE $user SET enemydef = 7");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 11");
+    // $results = $link->query("UPDATE $user SET enemydef = 7");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -471,10 +473,10 @@ if ($enemy == 'Orc') {
 }
 // --------------------------------------------------------------  ogre
 if ($enemy == 'Ogre') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 50");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 15");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 50");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 15");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 50,
         'enemyhp' => 50,
@@ -486,10 +488,10 @@ if ($enemy == 'Ogre') {
 }
 // --------------------------------------------------------------  ogre guard
 if ($enemy == 'Ogre Guard') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 80");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 80");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 80,
         'enemyhp' => 80,
@@ -501,10 +503,10 @@ if ($enemy == 'Ogre Guard') {
 }
 // --------------------------------------------------------------  fire ogress
 if ($enemy == 'Fire Ogress') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 70");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 70");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 70,
         'enemyhp' => 70,
@@ -517,10 +519,10 @@ if ($enemy == 'Fire Ogress') {
 }
 // --------------------------------------------------------------  ogre lieutenant
 if ($enemy == 'Ogre Lieutenant') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 35");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 35");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -532,10 +534,10 @@ if ($enemy == 'Ogre Lieutenant') {
 }
 // --------------------------------------------------------------  ogre priest
 if ($enemy == 'Ogre Priest') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 80");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 30");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 80");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 30");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 80,
         'enemyhp' => 80,
@@ -551,10 +553,10 @@ if ($enemy == 'Ogre Priest') {
 // ------------------------------------------------------------------------ KOBOLD CAVE
 // --------------------------------------------------------------  kobold
 if ($enemy == 'Kobold') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 30");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 10");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 30");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 10");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 30,
         'enemyhp' => 30,
@@ -567,10 +569,10 @@ if ($enemy == 'Kobold') {
 }
 // --------------------------------------------------------------  flying kobold
 if ($enemy == 'Flying Kobold') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 30");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 10");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 30");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 10");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 30,
         'enemyhp' => 30,
@@ -583,10 +585,10 @@ if ($enemy == 'Flying Kobold') {
 }
 // --------------------------------------------------------------  kobold shaman
 if ($enemy == 'Kobold Shaman') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 15");
-    $results = $link->query("UPDATE $user SET enemydef = 4");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 15");
+    // $results = $link->query("UPDATE $user SET enemydef = 4");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -599,10 +601,10 @@ if ($enemy == 'Kobold Shaman') {
 }
 // --------------------------------------------------------------  kobold ninja
 if ($enemy == 'Kobold Ninja') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 8");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 8");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -614,10 +616,10 @@ if ($enemy == 'Kobold Ninja') {
 }
 // --------------------------------------------------------------  kobold warlock
 if ($enemy == 'Kobold Warlock') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 50");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 4");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 50");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 4");
     $updates = [ // -- set changes
         'enemyhpmax' => 50,
         'enemyhp' => 50,
@@ -630,10 +632,10 @@ if ($enemy == 'Kobold Warlock') {
 }
 // --------------------------------------------------------------  kobold champion
 if ($enemy == 'Kobold Champion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 100");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 8");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 100");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 8");
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
         'enemyhp' => 100,
@@ -645,10 +647,10 @@ if ($enemy == 'Kobold Champion') {
 }
 // --------------------------------------------------------------  kobold master
 if ($enemy == 'Kobold Master') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 80");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 80");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 50");
     $updates = [ // -- set changes
         'enemyhpmax' => 80,
         'enemyhp' => 80,
@@ -661,10 +663,10 @@ if ($enemy == 'Kobold Master') {
 }
 // --------------------------------------------------------------  kobold monk
 if ($enemy == 'Kobold Monk') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 60");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 30");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 60");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 30");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 60,
         'enemyhp' => 60,
@@ -682,10 +684,10 @@ if ($enemy == 'Kobold Monk') {
 
 // ------------------------------------------------------------------------ FOREST
 if ($enemy == 'Wolf') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 12");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 12");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -696,10 +698,10 @@ if ($enemy == 'Wolf') {
     $_SESSION['eLvl'] = 5;			// enemy level
 }
 if ($enemy == 'Coyote') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 15");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 15");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -710,10 +712,10 @@ if ($enemy == 'Coyote') {
     $_SESSION['eLvl'] = 6;			// enemy level
 }
 if ($enemy == 'Buck') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 60");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 15");
-    $results = $link->query("UPDATE $user SET enemydef = 8");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 60");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 15");
+    // $results = $link->query("UPDATE $user SET enemydef = 8");
     $updates = [ // -- set changes
         'enemyhpmax' => 60,
         'enemyhp' => 60,
@@ -724,10 +726,10 @@ if ($enemy == 'Buck') {
     $_SESSION['eLvl'] = 6;			// enemy level
 }
 if ($enemy == 'Bear') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 100");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 100");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
         'enemyhp' => 100,
@@ -738,10 +740,10 @@ if ($enemy == 'Bear') {
     $_SESSION['eLvl'] = 8;			// enemy level
 }
 if ($enemy == 'Stag') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 80");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 80");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 80,
         'enemyhp' => 80,
@@ -753,10 +755,10 @@ if ($enemy == 'Stag') {
         $_SESSION['eMagImm'] = 1;		// enemy mag immune
 }
 if ($enemy == 'Bigfoot') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -767,10 +769,10 @@ if ($enemy == 'Bigfoot') {
     $_SESSION['eLvl'] = 13;			// enemy level
 }
 if ($enemy == 'Hawk') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 30");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 30");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 30,
         'enemyhp' => 30,
@@ -783,10 +785,10 @@ if ($enemy == 'Hawk') {
 }
 // ------------------------------------------------------------------------ SEWER
 if ($enemy == 'Tarantula') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 50");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 50");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 50,
         'enemyhp' => 50,
@@ -797,10 +799,10 @@ if ($enemy == 'Tarantula') {
     $_SESSION['eLvl'] = 7;			// enemy level
 }
 if ($enemy == 'Sewer Rat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 60");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 15");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 60");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 15");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 60,
         'enemyhp' => 60,
@@ -811,10 +813,10 @@ if ($enemy == 'Sewer Rat') {
     $_SESSION['eLvl'] = 7;			// enemy level
 }
 if ($enemy == 'Red Gator') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 0");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -825,10 +827,10 @@ if ($enemy == 'Red Gator') {
     $_SESSION['eLvl'] = 10;			// enemy level
 }
 if ($enemy == 'Flying Dung Beetle') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -840,10 +842,10 @@ if ($enemy == 'Flying Dung Beetle') {
     $_SESSION['eFly'] = 1;			// enemy flies
 }
 if ($enemy == 'Imp') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 10");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 25");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 10");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 25");
     $updates = [ // -- set changes
         'enemyhpmax' => 10,
         'enemyhp' => 10,
@@ -856,10 +858,10 @@ if ($enemy == 'Imp') {
 }
 // ------------------------------------------------------------------------ THIEVE'S DEN
 if ($enemy == 'Thief') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 20");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 10");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 20");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 10");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 20,
         'enemyhp' => 20,
@@ -871,10 +873,10 @@ if ($enemy == 'Thief') {
         $_SESSION['eSteal'] = 1;		// enemy steals 20% [ 1 - attack ] coin
 }
 if ($enemy == 'Thief Pickpocket') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 70");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 70");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 70,
         'enemyhp' => 70,
@@ -886,10 +888,10 @@ if ($enemy == 'Thief Pickpocket') {
         $_SESSION['eSteal'] = 1;		// enemy steals 20% [ 1 - attack ] coin
 }
 if ($enemy == 'Thief Brute') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 120");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 30");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 120");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 30");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 120,
         'enemyhp' => 120,
@@ -900,10 +902,10 @@ if ($enemy == 'Thief Brute') {
     $_SESSION['eLvl'] = 11;			// enemy level
 }
 if ($enemy == 'Master Thief') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 45");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 45");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -916,10 +918,10 @@ if ($enemy == 'Master Thief') {
 }
 // ------------------------------------------------------------------------ CATACOMBS
 if ($enemy == 'Skeleton') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 15");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 15");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 40,
         'enemyhp' => 40,
@@ -930,10 +932,10 @@ if ($enemy == 'Skeleton') {
     $_SESSION['eLvl'] = 7;			// enemy level
 }
 if ($enemy == 'Skeleton Archer') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 50");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 50");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 50,
         'enemyhp' => 50,
@@ -945,10 +947,10 @@ if ($enemy == 'Skeleton Archer') {
         $_SESSION['eDex'] = 1;			// enemy dex att, used your dex as def
 }
 if ($enemy == 'Skeleton Knight') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 80");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 35");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 80");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 35");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 80,
         'enemyhp' => 80,
@@ -959,10 +961,10 @@ if ($enemy == 'Skeleton Knight') {
     $_SESSION['eLvl'] = 10;			// enemy level
 }
 if ($enemy == 'Skeleton Sorcerer') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 80");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 80");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 80,
         'enemyhp' => 80,
@@ -974,10 +976,10 @@ if ($enemy == 'Skeleton Sorcerer') {
         $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
 }
 if ($enemy == 'Ancient Skeleton') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 120");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 120");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 120,
         'enemyhp' => 120,
@@ -988,10 +990,10 @@ if ($enemy == 'Ancient Skeleton') {
     $_SESSION['eLvl'] = 13;			// enemy level
 }
 if ($enemy == 'Victoria the Dead') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 50");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 50");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -1005,10 +1007,10 @@ if ($enemy == 'Victoria the Dead') {
         $_SESSION['notthe'] = 1;		// make 1 when enemy doesn't have THE (ex. diablo)
 }
 if ($enemy == 'Omar the Dead') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -1021,10 +1023,10 @@ if ($enemy == 'Omar the Dead') {
 }
 // ------------------------------------------------------------------------ Abandoned Mine
 if ($enemy == 'Rabid Skeever') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 30");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 30");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -1036,10 +1038,10 @@ if ($enemy == 'Rabid Skeever') {
         $_SESSION['eBite'] = 1;		// enemy bites you, 2x pure attack damage
 }
 if ($enemy == 'Bleeding Dartwing') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 50");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 50");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -1051,10 +1053,10 @@ if ($enemy == 'Bleeding Dartwing') {
         $_SESSION['eFly'] = 1;			// enemy flies
 }
 if ($enemy == 'Mongolian Death Worm') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 600");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 70");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 600");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 70");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 600,
         'enemyhp' => 600,
@@ -1067,10 +1069,10 @@ if ($enemy == 'Mongolian Death Worm') {
 }
 // ------------------------------------------------------------------------ Stone Grotto
 if ($enemy == 'Demon Wing') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 150");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 50");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 150");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 50");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 150,
         'enemyhp' => 150,
@@ -1083,10 +1085,10 @@ if ($enemy == 'Demon Wing') {
         $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
 }
 if ($enemy == 'Possessed Axeman') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 600");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 70");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 600");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 70");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 600,
         'enemyhp' => 600,
@@ -1099,10 +1101,10 @@ if ($enemy == 'Possessed Axeman') {
 }
 // ------------------------------------------------------------------------ RED FORT
 if ($enemy == 'Red Bandit') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -1114,10 +1116,10 @@ if ($enemy == 'Red Bandit') {
         $_SESSION['eSteal'] = 1;		// enemy steals 20% [ 1 - attack ] coin
 }
 if ($enemy == 'Bandit Marauder') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 50");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 50");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -1129,10 +1131,10 @@ if ($enemy == 'Bandit Marauder') {
         $_SESSION['eDex'] = 1;			// enemy dex att
 }
 if ($enemy == 'Butcher') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1144,10 +1146,10 @@ if ($enemy == 'Butcher') {
         $_SESSION['ePow'] = 1;			// enemy power x3 att
 }
 if ($enemy == 'Red Beard') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 600");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 90");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 600");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 90");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 600,
         'enemyhp' => 600,
@@ -1172,10 +1174,10 @@ if ($enemy == 'Red Beard') {
 
 // ------------------------------------------------------------------------ BLUE OCEAN
 if ($enemy == 'Jellyfish') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 50");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 50");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 50,
         'enemyhp' => 50,
@@ -1186,10 +1188,10 @@ if ($enemy == 'Jellyfish') {
     $_SESSION['eLvl'] = 10;			// enemy level
 }
 if ($enemy == 'Electric Eel') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 60");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 20");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 60");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 20");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 60,
         'enemyhp' => 60,
@@ -1201,10 +1203,10 @@ if ($enemy == 'Electric Eel') {
         $_SESSION['eDodge'] = 2;		// enemy dodges LVL x 10%
 }
 if ($enemy == 'Piranha') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 80");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 80");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 80,
         'enemyhp' => 80,
@@ -1216,10 +1218,10 @@ if ($enemy == 'Piranha') {
         $_SESSION['eMulti'] = 2;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Barracuda') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 100");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 25");
-    $results = $link->query("UPDATE $user SET enemydef = 25");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 100");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 25");
+    // $results = $link->query("UPDATE $user SET enemydef = 25");
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
         'enemyhp' => 100,
@@ -1230,10 +1232,10 @@ if ($enemy == 'Barracuda') {
     $_SESSION['eLvl'] = 12;			// enemy level
 }
 if ($enemy == 'Squid') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 120");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 35");
-    $results = $link->query("UPDATE $user SET enemydef = 25");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 120");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 35");
+    // $results = $link->query("UPDATE $user SET enemydef = 25");
     $updates = [ // -- set changes
         'enemyhpmax' => 120,
         'enemyhp' => 120,
@@ -1244,10 +1246,10 @@ if ($enemy == 'Squid') {
     $_SESSION['eLvl'] = 13;			// enemy level
 }
 if ($enemy == 'Albatross') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 60");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 60");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 60,
         'enemyhp' => 60,
@@ -1259,10 +1261,10 @@ if ($enemy == 'Albatross') {
         $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
 }
 if ($enemy == 'Crocodile') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 50");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1274,10 +1276,10 @@ if ($enemy == 'Crocodile') {
         $_SESSION['eBite'] = 1;		// enemy bites you, 2x pure attack damage
 }
 if ($enemy == 'King Squid') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 300");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 120");
-    $results = $link->query("UPDATE $user SET enemydef = 120");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 300");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 120");
+    // $results = $link->query("UPDATE $user SET enemydef = 120");
     $updates = [ // -- set changes
         'enemyhpmax' => 300,
         'enemyhp' => 300,
@@ -1290,10 +1292,10 @@ if ($enemy == 'King Squid') {
         $_SESSION['eTripleHit'] = 1;	// enemy always hits 3 times
 }
 if ($enemy == 'Mud Crab') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 50");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 30");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 50");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 30");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 50,
         'enemyhp' => 50,
@@ -1305,10 +1307,10 @@ if ($enemy == 'Mud Crab') {
 }
 // ------------------------------------------------------------------------ UNDERWATER
 if ($enemy == 'Giant Sea Turtle') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 35");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 35");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -1320,10 +1322,10 @@ if ($enemy == 'Giant Sea Turtle') {
         $_SESSION['eDexImm'] = 1;		// enemy dex immune
 }
 if ($enemy == 'Colossal Squid') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 600");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 45");
-    $results = $link->query("UPDATE $user SET enemydef = 5");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 600");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 45");
+    // $results = $link->query("UPDATE $user SET enemydef = 5");
     $updates = [ // -- set changes
         'enemyhpmax' => 600,
         'enemyhp' => 600,
@@ -1335,10 +1337,10 @@ if ($enemy == 'Colossal Squid') {
         $_SESSION['eDexImm'] = 1;		// enemy dex immune
 }
 if ($enemy == 'Hammerhead') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 50");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 50");
+    // $results = $link->query("UPDATE $user SET enemydef = 50");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -1351,10 +1353,10 @@ if ($enemy == 'Hammerhead') {
         $_SESSION['ePow'] = 1;			// enemy power attack, 1/3 chance x3 att
 }
 if ($enemy == 'Great White') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -1367,10 +1369,10 @@ if ($enemy == 'Great White') {
         $_SESSION['ePow'] = 1;			// enemy power attack, 1/3 chance x3 att
 }
 if ($enemy == 'Kraken') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 80");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 80");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -1385,10 +1387,10 @@ if ($enemy == 'Kraken') {
         $_SESSION['eMulti'] = 6;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Glowing Octopus') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 150");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 50");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 150");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 50");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 150,
         'enemyhp' => 150,
@@ -1402,10 +1404,10 @@ if ($enemy == 'Glowing Octopus') {
 }
 
 if ($enemy == 'Thunder Barbarian') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1419,10 +1421,10 @@ if ($enemy == 'Thunder Barbarian') {
         $_SESSION['ePureD'] = 1;		// enemy has max defense
 }
 if ($enemy == 'Smooth Ranger') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1436,10 +1438,10 @@ if ($enemy == 'Smooth Ranger') {
         $_SESSION['ePureD'] = 1;		// enemy has max defense
 }
 if ($enemy == 'Coral Wizard') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1453,10 +1455,10 @@ if ($enemy == 'Coral Wizard') {
         $_SESSION['ePureD'] = 1;		// enemy has max defense
 }
 if ($enemy == 'Heavy Walrus') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1469,10 +1471,10 @@ if ($enemy == 'Heavy Walrus') {
         $_SESSION['ePureD'] = 1;		// enemy has max defense
 }
 if ($enemy == 'Water Temple Guardian') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 200");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 200");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -1486,10 +1488,10 @@ if ($enemy == 'Water Temple Guardian') {
         $_SESSION['ePureD'] = 1;		// enemy has max defense
 }
 if ($enemy == 'Poseidon') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100000");
-    $results = $link->query("UPDATE $user SET enemydef = 100000");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100000");
+    // $results = $link->query("UPDATE $user SET enemydef = 100000");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000000,
         'enemyhp' => 1000000,
@@ -1505,10 +1507,10 @@ if ($enemy == 'Poseidon') {
 
 // ------------------------------------------------------------------------ NEVERENDING MINE
 if ($enemy == 'Iron Rat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 100");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 100");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
         'enemyhp' => 100,
@@ -1520,10 +1522,10 @@ if ($enemy == 'Iron Rat') {
         $_SESSION['eBite'] = 1;		// enemy bites you, 2x pure attack damage
 }
 if ($enemy == 'Iron Crab') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 100");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 100");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 100,
         'enemyhp' => 100,
@@ -1534,10 +1536,10 @@ if ($enemy == 'Iron Crab') {
     $_SESSION['eLvl'] = 15;			// enemy level
 }
 if ($enemy == 'Iron Scorpion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -1549,10 +1551,10 @@ if ($enemy == 'Iron Scorpion') {
         $_SESSION['eCrit'] = 1;		// enemy critical attack, 1/10 chance x10 attack
 }
 if ($enemy == 'War Turtle') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 80");
-    $results = $link->query("UPDATE $user SET enemydef = 60");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 80");
+    // $results = $link->query("UPDATE $user SET enemydef = 60");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -1565,10 +1567,10 @@ if ($enemy == 'War Turtle') {
         $_SESSION['eDexImm'] = 1;		// enemy dex immune
 }
 if ($enemy == 'Slag Beast') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -1580,10 +1582,10 @@ if ($enemy == 'Slag Beast') {
         $_SESSION['eMulti'] = 4;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Iron Gator') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 90");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 90");
+    // $results = $link->query("UPDATE $user SET enemydef = 0");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1594,10 +1596,10 @@ if ($enemy == 'Iron Gator') {
     $_SESSION['eLvl'] = 25;			// enemy level
 }
 if ($enemy == 'Iron Golem') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 250");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 90");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 250");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 90");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 250,
         'enemyhp' => 250,
@@ -1608,10 +1610,10 @@ if ($enemy == 'Iron Golem') {
     $_SESSION['eLvl'] = 25;			// enemy level
 }
 if ($enemy == 'Phoenix') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 50");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1625,10 +1627,10 @@ if ($enemy == 'Phoenix') {
         $_SESSION['eMulti'] = 3;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Iron Cobra') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -1641,10 +1643,10 @@ if ($enemy == 'Iron Cobra') {
         $_SESSION['ePoison'] = 2;		// enemy poisons you (1) 1 - lvl/2  (2) 1-lvl
 }
 if ($enemy == 'Earth Golem') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 120");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 120");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -1658,10 +1660,10 @@ if ($enemy == 'Earth Golem') {
 
 
 if ($enemy == 'Steel Rat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 60");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 60");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -1673,10 +1675,10 @@ if ($enemy == 'Steel Rat') {
         $_SESSION['eBite'] = 1;		// enemy bites you, 2x pure attack damage
 }
 if ($enemy == 'Steel Crab') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 80");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 80");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -1687,10 +1689,10 @@ if ($enemy == 'Steel Crab') {
     $_SESSION['eLvl'] = 20;			// enemy level
 }
 if ($enemy == 'Steel Scorpion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 60");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 60");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1702,10 +1704,10 @@ if ($enemy == 'Steel Scorpion') {
         $_SESSION['eCrit'] = 1;		// enemy critical attack, 1/10 chance x10 attack
 }
 if ($enemy == 'Ulfberht') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 120");
-    $results = $link->query("UPDATE $user SET enemydef = 120");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 120");
+    // $results = $link->query("UPDATE $user SET enemydef = 120");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -1719,10 +1721,10 @@ if ($enemy == 'Ulfberht') {
         $_SESSION['eBlock'] = 1;		// block all damage, 1/5 chance
 }
 if ($enemy == 'Black Frog') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 600");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 600");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 600,
         'enemyhp' => 600,
@@ -1734,10 +1736,10 @@ if ($enemy == 'Black Frog') {
         $_SESSION['eStrImm'] = 0;		// enemy str immune
 }
 if ($enemy == 'Steel Gator') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 120");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 120");
+    // $results = $link->query("UPDATE $user SET enemydef = 0");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -1748,10 +1750,10 @@ if ($enemy == 'Steel Gator') {
     $_SESSION['eLvl'] = 35;			// enemy level
 }
 if ($enemy == 'Steel Golem') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 600");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 140");
-    $results = $link->query("UPDATE $user SET enemydef = 140");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 600");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 140");
+    // $results = $link->query("UPDATE $user SET enemydef = 140");
     $updates = [ // -- set changes
         'enemyhpmax' => 600,
         'enemyhp' => 600,
@@ -1762,10 +1764,10 @@ if ($enemy == 'Steel Golem') {
     $_SESSION['eLvl'] = 35;			// enemy level
 }
 if ($enemy == 'Cyclops') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -1777,10 +1779,10 @@ if ($enemy == 'Cyclops') {
         $_SESSION['ePureA'] = 1;		// enemy attacks pure, you have no def
 }
 if ($enemy == 'Stone Assassin') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -1792,10 +1794,10 @@ if ($enemy == 'Stone Assassin') {
         $_SESSION['eCrit'] = 1;		// enemy critical attack, 1/10 chance x10 attack
 }
 if ($enemy == 'Gamma Monk') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 200");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 200");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -1814,10 +1816,10 @@ if ($enemy == 'Gamma Monk') {
 
 
 if ($enemy == 'Mithril Rat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -1829,10 +1831,10 @@ if ($enemy == 'Mithril Rat') {
         $_SESSION['eBite'] = 1;		// enemy bites you, 2x pure attack damage
 }
 if ($enemy == 'Mithril Crab') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 60");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 60");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -1843,10 +1845,10 @@ if ($enemy == 'Mithril Crab') {
     $_SESSION['eLvl'] = 30;			// enemy level
 }
 if ($enemy == 'Mithril Scorpion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -1858,10 +1860,10 @@ if ($enemy == 'Mithril Scorpion') {
         $_SESSION['eCrit'] = 1;		// enemy critical attack, 1/10 chance x10 attack
 }
 if ($enemy == 'Griffin') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 1500,
         'enemyhp' => 1500,
@@ -1876,10 +1878,10 @@ if ($enemy == 'Griffin') {
        $_SESSION['eStrImm'] = 1;		// enemy str immune
 }
 if ($enemy == 'Blue Frog') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -1893,10 +1895,10 @@ if ($enemy == 'Blue Frog') {
         $_SESSION['eHeal'] = 1;		// enemy heals self
 }
 if ($enemy == 'Mithril Gator') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 0");
     $updates = [ // -- set changes
         'enemyhpmax' => 1200,
         'enemyhp' => 1200,
@@ -1907,10 +1909,10 @@ if ($enemy == 'Mithril Gator') {
     $_SESSION['eLvl'] = 45;			// enemy level
 }
 if ($enemy == 'Mithril Golem') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 900");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 900");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 300");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 900,
         'enemyhp' => 900,
@@ -1921,10 +1923,10 @@ if ($enemy == 'Mithril Golem') {
     $_SESSION['eLvl'] = 55;			// enemy level
 }
 if ($enemy == 'Minotaur') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 350");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 350");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 3000,
         'enemyhp' => 3000,
@@ -1937,10 +1939,10 @@ if ($enemy == 'Minotaur') {
     $_SESSION['eRage'] = 1;		// enemy rage attack, 1/5 chance to do 2-4 pure hit combo	(200%, 300% or 400% pure damage)
 }
 if ($enemy == 'Cosmic Mage') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 400");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 400");
+    // $results = $link->query("UPDATE $user SET enemydef = 50");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -1953,10 +1955,10 @@ if ($enemy == 'Cosmic Mage') {
         $_SESSION['eMagImm'] = 1;		// enemy mag immune
 }
 if ($enemy == 'Carbon Beast') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 500");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 500");
+    // $results = $link->query("UPDATE $user SET enemydef = 0");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -1980,10 +1982,10 @@ if ($enemy == 'Carbon Beast') {
 
 // ------------------------------------------------------------------------ NEVERENDING MINE / END
 if ($enemy == 'Earth Giant') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 40000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 40000");
-    $results = $link->query("UPDATE $user SET enemydef = 20000");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 40000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 40000");
+    // $results = $link->query("UPDATE $user SET enemydef = 20000");
     $updates = [ // -- set changes
         'enemyhpmax' => 40000,
         'enemyhp' => 40000,
@@ -1996,10 +1998,10 @@ if ($enemy == 'Earth Giant') {
 }
 // ------------------------------------------------------------------------
 if ($enemy == 'God of Earth') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 120000");
-    $results = $link->query("UPDATE $user SET enemydef = 100000");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 120000");
+    // $results = $link->query("UPDATE $user SET enemydef = 100000");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000000,
         'enemyhp' => 1000000,
@@ -2018,10 +2020,10 @@ if ($enemy == 'God of Earth') {
 
 // ------------------------------------------------------------------------ DF Mountain Path
 if ($enemy == 'Bowman') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 300");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 300");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 300,
         'enemyhp' => 300,
@@ -2034,10 +2036,10 @@ if ($enemy == 'Bowman') {
         $_SESSION['eMulti'] = 2;		// enemy LVL * 10% chance attack again (1 - 10)}
 }
 if ($enemy == 'Highwayman') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 60");
-    $results = $link->query("UPDATE $user SET enemydef = 40");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 60");
+    // $results = $link->query("UPDATE $user SET enemydef = 40");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -2053,10 +2055,10 @@ if ($enemy == 'Highwayman') {
 
 // ------------------------------------------------------------------------ DARK FOREST
 if ($enemy == 'Troll') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 120");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 30");
-    $results = $link->query("UPDATE $user SET enemydef = 15");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 120");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 30");
+    // $results = $link->query("UPDATE $user SET enemydef = 15");
     $updates = [ // -- set changes
         'enemyhpmax' => 120,
         'enemyhp' => 120,
@@ -2068,10 +2070,10 @@ if ($enemy == 'Troll') {
         $_SESSION['ePow'] = 1;			// enemy power x3 att
 }
 if ($enemy == 'Troll Shaman') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 150");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 70");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 150");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 70");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 150,
         'enemyhp' => 150,
@@ -2084,10 +2086,10 @@ if ($enemy == 'Troll Shaman') {
         $_SESSION['eHeal'] = 1;		// enemy heals self
 }
 if ($enemy == 'Troll Sorcerer') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 300");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 70");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 300");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 70");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 300,
         'enemyhp' => 300,
@@ -2101,10 +2103,10 @@ if ($enemy == 'Troll Sorcerer') {
         $_SESSION['eMulti'] = 4;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Troll Elder') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 90");
-    $results = $link->query("UPDATE $user SET enemydef = 30");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 90");
+    // $results = $link->query("UPDATE $user SET enemydef = 30");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -2116,10 +2118,10 @@ if ($enemy == 'Troll Elder') {
         $_SESSION['ePow'] = 1;			// enemy power x3 att
 }
 if ($enemy == 'Troll Champion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 10");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 10");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -2131,10 +2133,10 @@ if ($enemy == 'Troll Champion') {
         $_SESSION['eRage'] = 1;		// enemy rage attack, 1/5 chance to do 2-4 pure hit combo (200% - 400% damage)
 }
 if ($enemy == 'Troll Queen') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 700");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 140");
-    $results = $link->query("UPDATE $user SET enemydef = 70");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 700");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 140");
+    // $results = $link->query("UPDATE $user SET enemydef = 70");
     $updates = [ // -- set changes
         'enemyhpmax' => 700,
         'enemyhp' => 700,
@@ -2149,10 +2151,10 @@ if ($enemy == 'Troll Queen') {
         $_SESSION['eMulti'] = 4;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Troll King') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 160");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 160");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -2168,10 +2170,10 @@ if ($enemy == 'Troll King') {
 }
 
 if ($enemy == 'Falcon') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 200,
         'enemyhp' => 200,
@@ -2183,10 +2185,10 @@ if ($enemy == 'Falcon') {
         $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
 }
 if ($enemy == 'Ent') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 70");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 70");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -2199,10 +2201,10 @@ if ($enemy == 'Ent') {
         $_SESSION['eMagImm'] = 1;		// enemy mag immune
 }
 if ($enemy == 'Dark Ranger') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 400");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 400");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 400,
         'enemyhp' => 400,
@@ -2215,10 +2217,10 @@ if ($enemy == 'Dark Ranger') {
         $_SESSION['eDexImm'] = 1;		// enemy dex immune
 }
 if ($enemy == 'Wisp') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 50");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -2235,10 +2237,10 @@ if ($enemy == 'Wisp') {
 
 // ------------------------------------------------------------------------ DARK KEEP
 if ($enemy == 'Lurker') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -2250,10 +2252,10 @@ if ($enemy == 'Lurker') {
         $_SESSION['ePoison'] = 1;		// enemy poisons you (1) 1 - lvl/2  (2) 1-lvl
 }
 if ($enemy == 'Winged Demon') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 120");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 120");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2265,10 +2267,10 @@ if ($enemy == 'Winged Demon') {
         $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
 }
 if ($enemy == 'Undead Orc') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2281,10 +2283,10 @@ if ($enemy == 'Undead Orc') {
         $_SESSION['eMulti'] = 3;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Stone Sphinx') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -2298,10 +2300,10 @@ if ($enemy == 'Stone Sphinx') {
         $_SESSION['eMagImm'] = 1;		// enemy mag immune
 }
 if ($enemy == 'Warped Priest') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2314,10 +2316,10 @@ if ($enemy == 'Warped Priest') {
         $_SESSION['eCrit'] = 1;		// enemy critical attack, 1/10 chance x10 attack			((1-att)*10)
 }
 if ($enemy == 'Dark Paladin') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 200");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 200");
     $updates = [ // -- set changes
         'enemyhpmax' => 1500,
         'enemyhp' => 1500,
@@ -2329,10 +2331,10 @@ if ($enemy == 'Dark Paladin') {
         $_SESSION['eHeal'] = 1;		// enemy heals self
 }
 if ($enemy == 'Dark Prince') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 300");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 3000,
         'enemyhp' => 3000,
@@ -2347,10 +2349,10 @@ if ($enemy == 'Dark Prince') {
 
 
 if ($enemy == 'Forest Princess') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 10000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 10000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 300");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 10000,
         'enemyhp' => 10000,
@@ -2369,10 +2371,10 @@ if ($enemy == 'Forest Princess') {
 
 // ------------------------------------------------------------------------ MOUNTAINS
 if ($enemy == 'Friendly Giant') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 500,
         'enemyhp' => 500,
@@ -2383,10 +2385,10 @@ if ($enemy == 'Friendly Giant') {
     $_SESSION['eLvl'] = 30;			// enemy level
 }
 if ($enemy == 'Mountain Giant') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 100");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 100");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2397,10 +2399,10 @@ if ($enemy == 'Mountain Giant') {
     $_SESSION['eLvl'] = 30;			// enemy level
 }
 if ($enemy == 'Ice Troll') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 80");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 80");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -2413,10 +2415,10 @@ if ($enemy == 'Ice Troll') {
         $_SESSION['eBite'] = 1;		// enemy bites you, 2x pure attack damage					(200% pure damage)
 }
 if ($enemy == 'Giant Brute') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 20");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 20");
     $updates = [ // -- set changes
         'enemyhpmax' => 1200,
         'enemyhp' => 1200,
@@ -2428,10 +2430,10 @@ if ($enemy == 'Giant Brute') {
         $_SESSION['eSteal'] = 1;		// enemy steals 20% [ 1 - attack ] coin
 }
 if ($enemy == 'Wyvern') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 120");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 120");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -2443,10 +2445,10 @@ if ($enemy == 'Wyvern') {
         $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
 }
 if ($enemy == 'Stone Dwarf') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 120");
-    $results = $link->query("UPDATE $user SET enemydef = 200");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 120");
+    // $results = $link->query("UPDATE $user SET enemydef = 200");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -2459,10 +2461,10 @@ if ($enemy == 'Stone Dwarf') {
         $_SESSION['eBlock'] = 1;			// block all damage, 1/5 chance
 }
 if ($enemy == 'Giant Mountain Giant') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 6000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 6000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 300");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 6000,
         'enemyhp' => 6000,
@@ -2473,10 +2475,10 @@ if ($enemy == 'Giant Mountain Giant') {
     $_SESSION['eLvl'] = 50;			// enemy level
 }
 if ($enemy == 'Gatekeeper') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 4000,
         'enemyhp' => 4000,
@@ -2490,10 +2492,10 @@ if ($enemy == 'Gatekeeper') {
         $_SESSION['eAssassinate'] = 1;		// NEW!!!! - 1/4 chance to do 50 times damage, first strike
 }
 if ($enemy == 'Yeti') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -2505,10 +2507,10 @@ if ($enemy == 'Yeti') {
             $_SESSION['eMagImm'] = 0;		// enemy mag immune
 }
 if ($enemy == 'Snow Ogre') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1500,
         'enemyhp' => 1500,
@@ -2520,10 +2522,10 @@ if ($enemy == 'Snow Ogre') {
             $_SESSION['eRage'] = 1;		// enemy rage attack, 1/5 chance to do 2-4 pure hit combo	(200%, 300% or 400% pure damage)
 }
 if ($enemy == 'Snow Ninja') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1200");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 1200,
         'enemyhp' => 1200,
@@ -2536,10 +2538,10 @@ if ($enemy == 'Snow Ninja') {
             $_SESSION['ePoison'] = 2;		// enemy poisons you (1) 1 - lvl/2  (2) 1-lvl
 }
 if ($enemy == 'Snow Owl') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 50");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2553,10 +2555,10 @@ if ($enemy == 'Snow Owl') {
         $_SESSION['eHeal'] = 1;		    // enemy heals self
 }
 if ($enemy == 'Dragon') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 250");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2500");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 250");
     $updates = [ // -- set changes
         'enemyhpmax' => 2500,
         'enemyhp' => 2500,
@@ -2571,10 +2573,10 @@ if ($enemy == 'Dragon') {
 
 // ------------------------------------------------------------------------ MOUNTAIN CATHEDRAL
 if ($enemy == 'Grey Gargoyle') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -2586,10 +2588,10 @@ if ($enemy == 'Grey Gargoyle') {
             $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
 }
 if ($enemy == 'White Gargoyle') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 600");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 600");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 600,
         'enemyhp' => 600,
@@ -2602,10 +2604,10 @@ if ($enemy == 'White Gargoyle') {
             $_SESSION['eHeal'] = 1;			// enemy heals self
 }
 if ($enemy == 'Vampire') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 800");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 800,
         'enemyhp' => 800,
@@ -2619,10 +2621,10 @@ if ($enemy == 'Vampire') {
 
 }
 if ($enemy == 'Fallen Priest') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 250");
+    // $results = $link->query("UPDATE $user SET enemydef = 150");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -2635,10 +2637,10 @@ if ($enemy == 'Fallen Priest') {
             $_SESSION['eHeal'] = 1;			// enemy heals self
 }
 if ($enemy == 'Fallen Angel') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 400");
-    $results = $link->query("UPDATE $user SET enemydef = 200");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 400");
+    // $results = $link->query("UPDATE $user SET enemydef = 200");
     $updates = [ // -- set changes
         'enemyhpmax' => 4000,
         'enemyhp' => 4000,
@@ -2652,10 +2654,10 @@ if ($enemy == 'Fallen Angel') {
             $_SESSION['ePoison'] = 2;		// enemy poisons you (1) 1 - lvl/2  (2) 1-lvl
 }
 if ($enemy == 'Risen Skeleton') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 700");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 700");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 150");
+    // $results = $link->query("UPDATE $user SET enemydef = 80");
     $updates = [ // -- set changes
         'enemyhpmax' => 700,
         'enemyhp' => 700,
@@ -2669,10 +2671,10 @@ if ($enemy == 'Risen Skeleton') {
 
 // ------------------------------------------------------------------------ MOUNTAIN XTRA
 if ($enemy == 'Jiemji') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 6000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 6000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 300");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 6000,
         'enemyhp' => 6000,
@@ -2687,10 +2689,10 @@ if ($enemy == 'Jiemji') {
         $_SESSION['notthe'] = 1;		// make 1 when enemy doesn't have THE (ex. diablo)
 }
 if ($enemy == 'Jikay') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 4000,
         'enemyhp' => 4000,
@@ -2704,10 +2706,10 @@ if ($enemy == 'Jikay') {
         $_SESSION['notthe'] = 1;		// make 1 when enemy doesn't have THE (ex. diablo)
 }
 if ($enemy == 'King Blade') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 10000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 1200");
-    $results = $link->query("UPDATE $user SET enemydef = 600");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 10000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 1200");
+    // $results = $link->query("UPDATE $user SET enemydef = 600");
     $updates = [ // -- set changes
         'enemyhpmax' => 10000,
         'enemyhp' => 10000,
@@ -2727,10 +2729,10 @@ if ($enemy == 'King Blade') {
 
 // --------------------------------------------------------------  Silver Titan
 if ($enemy == 'Silver Titan') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 9000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 900");
-    $results = $link->query("UPDATE $user SET enemydef = 900");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 9000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 900");
+    // $results = $link->query("UPDATE $user SET enemydef = 900");
     $updates = [ // -- set changes
         'enemyhpmax' => 9000,
         'enemyhp' => 9000,
@@ -2750,10 +2752,10 @@ if ($enemy == 'Silver Titan') {
 
 
 if ($enemy == 'Hydra') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 200");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 200");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -2766,10 +2768,10 @@ if ($enemy == 'Hydra') {
 }
 
 if ($enemy == 'Brownie') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2782,10 +2784,10 @@ if ($enemy == 'Brownie') {
     $_SESSION['eStrImm'] = 1;		// enemy str immune
 }
 if ($enemy == 'Harpy') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 300");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2800,10 +2802,10 @@ if ($enemy == 'Harpy') {
     $_SESSION['ePoison'] = 1;		// enemy poisons you (1) 1 - lvl/2  (2) 1-lvl
 }
 if ($enemy == 'Gorgon') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 400");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 400");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -2815,10 +2817,10 @@ if ($enemy == 'Gorgon') {
     $_SESSION['eTripleHit'] = 1;	// enemy always hits 3 times
 }
 if ($enemy == 'Banshee') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 700");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 700");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -2833,10 +2835,10 @@ if ($enemy == 'Banshee') {
     $_SESSION['eDodge'] = 3;		// enemy dodges LVL x 10%
 }
 if ($enemy == 'Succubus') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 600");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 600");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 3000,
         'enemyhp' => 3000,
@@ -2849,10 +2851,10 @@ if ($enemy == 'Succubus') {
 }
 
 if ($enemy == 'Magma Goblin') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -2864,10 +2866,10 @@ if ($enemy == 'Magma Goblin') {
     $_SESSION['eMulti'] = 4;		// enemy LVL * 10% chance attack again (1 - 10)
 }
 if ($enemy == 'Magma Kobold') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 2000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 300");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 2000,
         'enemyhp' => 2000,
@@ -2880,10 +2882,10 @@ if ($enemy == 'Magma Kobold') {
     $_SESSION['eMagImm'] = 1;		// enemy mag immune
     }
 if ($enemy == 'Magma Orc') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 400");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 400");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 3000,
         'enemyhp' => 3000,
@@ -2896,10 +2898,10 @@ if ($enemy == 'Magma Orc') {
     $_SESSION['eDex'] = 1;			// enemy dex att, uses your dex as def
     }    
 if ($enemy == 'Magma Ogre') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 500");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 500");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 3000,
         'enemyhp' => 3000,
@@ -2911,10 +2913,10 @@ if ($enemy == 'Magma Ogre') {
     $_SESSION['eRage'] = 1;	    	// enemy - 2-4x pure hit, 1/5 chance 	    (200%, 300% or 400% pure)   // RAGE
     }
 if ($enemy == 'Magma Troll') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 600");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 600");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 4000,
         'enemyhp' => 4000,
@@ -2927,10 +2929,10 @@ if ($enemy == 'Magma Troll') {
     $_SESSION['eDexImm'] = 1;		// enemy dex immune
 }
 if ($enemy == 'Chimera') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 600");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 600");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 8000,
         'enemyhp' => 8000,
@@ -2944,10 +2946,10 @@ if ($enemy == 'Chimera') {
     $_SESSION['eMagImm'] = 1;		// enemy mag immune
 }   
 if ($enemy == 'Basilisk') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 600");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 600");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 8000,
         'enemyhp' => 8000,
@@ -2961,10 +2963,10 @@ if ($enemy == 'Basilisk') {
     $_SESSION['eDodge'] = 2;		// enemy dodges LVL x 10%
 }
 if ($enemy == 'Cerberus') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 600");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 600");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 8000,
         'enemyhp' => 8000,
@@ -2977,10 +2979,10 @@ if ($enemy == 'Cerberus') {
     $_SESSION['eTripleHit'] = 1;	// enemy always hits 3 times
 }
 if ($enemy == 'Manticore') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 600");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 600");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 8000,
         'enemyhp' => 8000,
@@ -2992,10 +2994,10 @@ if ($enemy == 'Manticore') {
     $_SESSION['eCrit'] = 1;	    	// enemy - 10x damage, 1/10 chance  		((1-att)*10)                // CRITICAL
 }  
 if ($enemy == 'Medusa') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 600");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 8000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 600");
+    // $results = $link->query("UPDATE $user SET enemydef = 300");
     $updates = [ // -- set changes
         'enemyhpmax' => 8000,
         'enemyhp' => 8000,
@@ -3008,10 +3010,10 @@ if ($enemy == 'Medusa') {
     $_SESSION['eDodge'] = 2;		// enemy dodges LVL x 10%
 }  
 if ($enemy == 'Skeleton King') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 20000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 1000");
-    $results = $link->query("UPDATE $user SET enemydef = 500");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 20000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 1000");
+    // $results = $link->query("UPDATE $user SET enemydef = 500");
     $updates = [ // -- set changes
         'enemyhpmax' => 20000,
         'enemyhp' => 20000,
@@ -3033,10 +3035,10 @@ if ($enemy == 'Skeleton King') {
 
 // --------------------------------------------------------------  Bull Frog
 if ($enemy == 'Bull Frog') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
+    // $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
+    // $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
+    // $results = $link->query("UPDATE $user SET enemyatt = 200");
+    // $results = $link->query("UPDATE $user SET enemydef = 100");
     $updates = [ // -- set changes
         'enemyhpmax' => 1000,
         'enemyhp' => 1000,
@@ -3051,7 +3053,7 @@ if ($enemy == 'Bull Frog') {
 
 
 
-//$results = $link->query("UPDATE $user SET infight = 1"); 	// INFIGHT!!!!!
+//// $results = $link->query("UPDATE $user SET infight = 1"); 	// INFIGHT!!!!!
 
 $updates = [ // -- set changes
     'infight' => 1

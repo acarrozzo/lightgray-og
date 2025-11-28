@@ -140,9 +140,9 @@ list($charactercolor, $char) = getCharacterDetails($weapontype, $row);
 
     echo '<h1>'.$row['username'].'</h1>';
     echo '<i class="icon '.$charactercolor.' character card ddgrayBG">'.$char.'</i>';
-    echo '<h3 class="toprightX boxX ddgray"> lvl <span class="gold">'. $row['level'].'</span> <h4 class="lgray">Human '.$characterclass.'</h4></h3>';
+    echo '<h3 class="toprightX boxX ddgray"> lvl <span class="gold">'. $row['level'].'</span></h3>';
     echo '<div class="buffbound small">';
-
+// <h4 class="lgray">Human '.$characterclass.'</h4>
     //<span class= "cyan"> e</span><span class="cyan">'. $row['evolve'].'</span>
 
     // --------------------------------------------------------------------------- Poison Buff Box
