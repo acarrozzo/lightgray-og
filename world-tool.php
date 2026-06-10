@@ -198,15 +198,6 @@ if(isset($_SESSION['username'])){
     echo '<p>Log in to Chat and Play. <a class="green" href="index.php" target="game"> Log In / Create New Character</a></p>';
   }
 
-  echo '<div clas="chat-frame">';
-
-
-  
- include ('chat-module.php');
-//  include ('test-chat.php');
-
-echo '</div>';
-
 echo '
 
 <p>Light Gray</p>

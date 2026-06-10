@@ -30,7 +30,14 @@ require_once('db-connect.php'); // Ensure this connects to your database
 // $row = $result->fetch_assoc();
 
 
-$row = getUserData($link, $_SESSION['username']); // --- gets all user data from database 
+$row = getUserData($link, $_SESSION['username']); // --- gets all user data from database
+
+// Recompute effective stat mods (base + equipment + skills + temp buffs) and persist them
+// to the DB BEFORE the room file / battle.php / hud.php read them. This makes the DB the
+// single source of truth and fixes combat reading stale/zero session mods. See function-stats.php.
+require_once('function-stats.php');
+$statmods = recomputeStatMods($link, $_SESSION['username']);
+$row = $statmods['row']; // $row now carries the freshly persisted strmod/dexmod/magmod/defmod
 
 
 // ----------------------------------------------- cancels fight if logging in

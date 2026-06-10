@@ -1,6 +1,13 @@
-<?php 
+<?php
 if (session_status() === PHP_SESSION_NONE) {
   session_start();
+}
+// Defense-in-depth headers (sent before any output). A strict script-src is NOT set because
+// the page relies on inline <script> blocks (night/dawn theming) — locking those down cleanly
+// requires per-script nonces, which is out of scope here.
+if (!headers_sent()) {
+  header("Content-Security-Policy: object-src 'none'; base-uri 'self'; frame-ancestors 'self'");
+  header("X-Content-Type-Options: nosniff");
 }
 include('head.php');
 ?>
@@ -71,50 +78,6 @@ if (!isset($_SESSION['username']) || !is_string($_SESSION['username']) || empty(
 
 
 
-
-
-// function getChatData($link, $username) {
-//     $stmt = $link->prepare("SELECT * FROM users_chat WHERE username = ?");
-//     if (!$stmt) {
-//         error_log('Database prepare failed: ' . $link->error);
-//         die('An error occurred. Please try again later.');
-//     }
-//     $stmt->bind_param("s", $username);
-//     $stmt->execute();
-//     $result = $stmt->get_result();
-//     if ($result->num_rows === 0) {
-//         die('Chat data not found.');
-//     }
-//     return $result->fetch_assoc();
-// }
-// // $row = getChatData($link, $username); // --- gets all chat data from database
-
-
-// function getUsernameColor($level) {
-//     $colors = [
-//         '#999999', // 0-9 gray
-//         '#00cc00', // 10-19 green
-//         '#0066ff', // 20-29 blue
-//         '#9900cc', // 30-39 purple
-//         '#ff6600', // 40-49 orange
-//         '#cc0000', // 50-59 red
-//         '#ffcc00', // 60-69 gold
-//         '#00ffff', // 70-79 cyan
-//         '#ff00ff', // 80-89 magenta
-//         '#ffffff', // 90+ white
-//     ];
-//     return $colors[min(intval($level / 10), count($colors) - 1)];
-// }
-// function fetchChatMessages($link) {
-//     $result = $link->query("SELECT username, message, timestamp, user_level FROM chat_messages ORDER BY id DESC LIMIT 100");
-//     $messages = [];
-//     while ($row = $result->fetch_assoc()) {
-//         $color = $_SESSION['getUsernameColor'] = getUsernameColor($row['user_level']);
-//         $time = date("H:i", strtotime($row['timestamp']));
-//         $messages[] = "<p><span style='color:gray;'>[$time]</span> <strong style='color:$color;'>{$row['username']}</strong>: {$row['message']}</p>";
-//     }
-//     return implode('', array_reverse($messages)); // most recent at bottom
-// }
 
 
    // ----------------------------------------------- FUNCTION! USED ALOT! // Move this to correct spot
@@ -265,46 +228,6 @@ $user = $username = $_SESSION['username'];
 //commenting this out for now - not sure what its used for
 // $updates = ['recentlogin' => $recentlogin ]; // -- changes to be made
 // updateStats($link, $_SESSION['username'], $updates); // -- set changes
-
-
-// this updates the last active time in the database for the user
-if (isset($_SESSION['username'])) {
-    $stmt = $link->prepare("UPDATE users SET last_active = NOW() WHERE username = ?");
-    $stmt->bind_param("s", $_SESSION['username']);
-    $stmt->execute();
-    $stmt->close();
-}
-
-// this updates the user's status to active if they are logged in
-// Get user's previous status
-$stmt = $link->prepare("SELECT last_active, is_active FROM users WHERE username = ?");
-$stmt->bind_param("s", $username);
-$stmt->execute();
-$stmt->bind_result($last_active, $was_active);
-$stmt->fetch();
-$stmt->close();
-
-// Determine new status
-$now = new DateTime();
-$last = new DateTime($last_active);
-$diff = $now->getTimestamp() - $last->getTimestamp();
-$nowStr = $now->format('Y-m-d H:i:s');
-
-$is_active = true; // Assume they're now active
-
-// If they were inactive and now active again
-if (!$was_active && $diff >= 3600) {
-    broadcastSystemFeedMessage($link, "$username is now active again.");
-} 
-
-// Update last_active and is_active if status changed
-$stmt = $link->prepare("UPDATE users SET last_active = ?, is_active = ? WHERE username = ?");
-$stmt->bind_param("sis", $nowStr, $is_active, $username);
-$stmt->execute();
-$stmt->close();
-// -- end of updating last active time and status
-
-
 
 
 
@@ -492,11 +415,9 @@ echo '<div>
 <div class="panel" data-pop="world">
   <?php echo $closeMenuBtn; ?>
     	<section data-pop2="world" id="world" class="panel training"> <?php include('teleport.php'); ?> </section>
-    	<section data-pop2="chat" id="chat" class="panel training"> <?php include('chat.php'); ?> </section>
-	<div class="subMenu">
+    		<div class="subMenu">
 		<span class="menuIcon2 activXXX" data-link2="world"><span>World</span></span>
-		<span class="menuIcon2" data-link2="chat"><span>Chat</span></span>
-	</div>
+			</div>
 </div>
 
 <?php
@@ -626,230 +547,6 @@ var date = new Date();
 
 
 
-<script> // CHAT SCRIPT - MOVE EVENTUALLY TO SEPARATE FILE
-// This script handles the chat functionality, including fetching messages and sending new ones.
-// It uses the Fetch API to communicate with the server and updates the chat box in real-time.
-// It also manages the chat badge visibility based on whether the window has focus or not.
-
-let lastId = 0;
-let hasFocus = true;
-
-window.addEventListener("focus", () => hasFocus = true);
-window.addEventListener("blur", () => hasFocus = false);
-
-let lastMessageDate = null; // tracks the last date header shown
-
-function appendMessage(msg) {
-    const chatBox = document.getElementById('chat-box');
-    const level = parseInt(msg.user_level || 1);
-    const levelClass = getLevelColorClass(level);
-
-    const msgDate = new Date(msg.timestamp);
-    const dateString = formatDateHeader(msgDate); // e.g., "June 15, 2025"
-    const timeString = formatTime(msgDate);       // e.g., "14:05"
-
-    // Add date header if this message is on a different date
-    if (lastMessageDate !== dateString) {
-        // const dateDivider = document.createElement('div');
-        const dateDivider = document.createElement('h3');
-        dateDivider.className = 'date-divider';
-        dateDivider.textContent = dateString;
-        chatBox.appendChild(dateDivider);
-        lastMessageDate = dateString;
-    }
-
-    // Add message
-    const messageDiv = document.createElement('div');
-    messageDiv.className = 'chat-message';
-    // messageDiv.innerHTML = `
-    //     <span class="timestamp">[${timeString}]</span>
-    //     <strong class="${levelClass}">[${level}] ${msg.username}</strong>: ${msg.message}
-    // `;
-        messageDiv.innerHTML = `
-        <strong class="${levelClass}">[${level}] ${msg.username}</strong>: ${msg.message}   <span class="timestamp">${timeString}</span>
-    `;
-    chatBox.appendChild(messageDiv);
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
-function formatTime(date) {
-    const h = String(date.getHours()).padStart(2, '0');
-    const m = String(date.getMinutes()).padStart(2, '0');
-    return `${h}:${m}`;
-}
-
-function formatDateHeader(date) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString(undefined, options); // uses browser locale
-}
-function getLevelColorClass(level) {
-    if (level >= 60) return 'lvl-60';
-    if (level >= 50) return 'lvl-50';
-    if (level >= 40) return 'lvl-40';
-    if (level >= 30) return 'lvl-30';
-    if (level >= 20) return 'lvl-20';
-    if (level >= 10) return 'lvl-10';
-    return 'lvl-0';
-}
-
-function fetchMessages() {
-    fetch(`chat-get-message.php?last_id=${lastId}`)
-        .then(response => response.json())
-        .then(data => {
-            if (data.length > 0) {
-                data.forEach(msg => {
-                    appendMessage(msg);
-                    lastId = msg.id;
-                });
-                if (!hasFocus) {
-                    document.getElementById('chat-badge').style.display = 'inline';
-                }
-            }
-        });
-}
-setInterval(fetchMessages, 3000); // Poll every 3 seconds
-// Optional: fetch once on load
-fetchMessages();
-
-// this function fetches the feed from the server every 5 seconds and updates the feed inside the module.
-// this is used to catch any messages sent by other users in the chat and display them in the feed.
-let lastFeedContent = null;
-
-function fetchFeed() {
-    fetch('feed-get.php')
-        .then(response => response.json())
-        .then(data => {
-            if (data.feed !== undefined) {
-                if (lastFeedContent !== data.feed) { // this checks if the feed content has changed
-                    document.getElementById('feedinside').innerHTML = data.feed; // updates the feed inside the module if it has changed
-                    lastFeedContent = data.feed; 
-                }
-            }
-        });
-}
-// Update feed every 5 seconds
-setInterval(fetchFeed, 5000);
-// Optional: fetch once on load
-fetchFeed();
-
-
-
-document.getElementById('chat-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const input = document.getElementById('chat-input');
-    const message = input.value.trim();
-    var currentUserLevel = <?php echo isset($_SESSION['level']) ? (int)$_SESSION['level'] : 1; ?>;
-    
-    if (message !== '') {
-        fetch('chat-send-message.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'message=' + encodeURIComponent(message) + '&level=' + encodeURIComponent(currentUserLevel)
-        })
-        .then(response => response.text())
-        .then(text => {
-           // console.log('Server said:', text); // optionally log for debugging
-            input.value = '';
-            fetchMessages(); // instantly update chat
-            document.getElementById('chat-badge').style.display = 'none';
-        });
-    }
-});
-
-</script>
-
-
-
-
-
-<script>
-let lastUserList = [];
-
-function updateRoomUserButtons() { // this function fetches the list of users in the room and updates the buttons accordingly.
-    // Fetch the list of users in the room
-    fetch('get-room-users.php')
-        .then(response => response.json())
-        .then(users => {
-            // Sort both arrays for reliable comparison
-            const newList = [...users].sort();
-            const oldList = [...lastUserList].sort();
-
-            // Compare as JSON strings for simplicity
-            if (JSON.stringify(newList) !== JSON.stringify(oldList)) {
-                // Update stored list
-                lastUserList = users;
-
-                // Update DOM
-                const container = document.getElementById('room-users-container');
-                container.innerHTML = ''; // Clear old buttons
-
-                if (users.length > 0) {
-                    const label = document.createElement('p');
-                    label.className = 'gold';
-                    label.textContent = 'Also Here:';
-                    container.appendChild(label);
-
-                    users.forEach(user => {
-                        const form = document.createElement('form');
-                        form.method = 'post';
-                        form.className = 'inline-form';
-
-                        const button = document.createElement('button');
-                        button.className = 'oceanBGXXX userButton';
-                        button.type = 'submit';
-                        button.name = 'input1';
-                        button.value = `view ${user.username}`;
-                        button.textContent = `[${user.level}] ${user.username}`;
-
-                        form.appendChild(button);
-                        container.appendChild(form);
-                    });
-
-
-                    const dot = document.createTextNode('•');
-                    container.appendChild(dot);
-                }
-            }
-        })
-        .catch(err => console.error('Error fetching room users:', err));
-}
-
-// Refresh every 5 seconds
-setInterval(updateRoomUserButtons, 5000);
-// Run immediately on page load
-updateRoomUserButtons();
-</script>
-
-
-
-<script> // This script checks for new messages in the chat every 5 seconds and updates the chat box if there are new messages.
-// It also manages the visibility of the chat badge to indicate new messages.
-  // let lastMessageCount = 0;
-
-// function loadChat() {
-//     fetch('get_chat.php')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('chat-box').innerHTML = data;
-//         });
-// }
-
-// function checkNewMessages() {
-//     fetch('chat-count-get.php')
-//         .then(response => response.json())
-//         .then(data => {
-//             if (data.count > lastMessageCount) {
-//                 document.getElementById('chat-badge').style.display = 'inline';
-//                 lastMessageCount = data.count;
-//                 loadChat();
-//             }
-//         });
-// }
-
-// setInterval(checkNewMessages, 5000); // Poll every 5 sec
-
-
-
-</script>
 
 
 

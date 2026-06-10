@@ -55,10 +55,12 @@ while ($row = $result->fetch_assoc()) {
     $mag=$row['mag'];
     $def=$row['def'];
 
-    $strmod=$_SESSION['strmod'];
-    $dexmod=$_SESSION['dexmod'];
-    $magmod=$_SESSION['magmod'];
-    $defmod=$_SESSION['defmod'];
+    // Read effective mods from the DB column (source of truth, persisted by
+    // recomputeStatMods() earlier this request) instead of stale session vars.
+    $strmod=$row['strmod'];
+    $dexmod=$row['dexmod'];
+    $magmod=$row['magmod'];
+    $defmod=$row['defmod'];
 
     $onehanded=$row['onehanded'];
     $twohanded=$row['twohanded'];
