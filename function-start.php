@@ -56,14 +56,6 @@ while ($row = $result->fetch_assoc()) {
         echo '<i>You look around: <span class="gold">'.$roomname.'</span></i><br>';
         include('update_feed.php'); // --- update feed
     }
-    // --------------------------------------------------------------------------- VIEW USER CARD
-    elseif (strpos($input, 'view ') === 0) {
-        $viewedUsername = trim(substr($input, 5));
-            echo $message="You view $viewedUsername's player card:<br>";
-            include('update_feed.php'); // --- update feed
-        displayUserCard($link, $viewedUsername, $_SESSION['username']);
-        $funflag=1;
-    }
     // --------------------------------------------------------------------------- REST HEAL
     elseif ($input=="rest") {
         $stmt = $link->prepare("SELECT * FROM users WHERE username = ?");

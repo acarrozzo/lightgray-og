@@ -462,42 +462,6 @@ include('navquicklinks.php'); // -----------------------------------------------
 echo '<div class="quickBox">';
 
 
-
-// --------------------------------------------------------------------------- DISPLAY OTHER USERS
-// function to display a button for every other users names here if it matches the room you, the user, is also in.
-// function displayOtherUsers($currentRoom, $currentUsername) {
-//     global $users;
-//     $otherUsers = [];
-//     foreach ($users as $user) {
-//         if ($user['room'] === $currentRoom && $user['username'] !== $currentUsername) {
-//             $otherUsers[] = $user;
-//         }
-//     }
-//     // Show the message ONCE if there are any other users
-//     if (count($otherUsers) > 0) {
-//         echo '<p class="gold">Also Here:</p>';
-//         foreach ($otherUsers as $user) {
-//             echo '<button class="oceanBG userButton" type="button" data-username="' . htmlspecialchars($user['username']) . '">' . htmlspecialchars($user['username']) . '</button>';
-//         }
-//         echo '•';
-//     }
-// }
-// Fetch all users from the database
-// $users = [];
-// $result = $link->query("SELECT username, room FROM users");
-// if ($result) {
-//     while ($user = $result->fetch_assoc()) {
-//         $users[] = $user;
-//     }
-// }
-// displayOtherUsers($row['room'], $row['username']); // Call the function with the current room and username from the user data
-
-echo '
-<div id="room-users-container">
-  <!-- Dynamic user buttons will be inserted here -->
-</div>';
-
-
 // --------------------------------------------------------------------------- CLEAR FEED COUNTER - 200?
 if ($row['feedcounter']>=200) {
     echo'<button class="greenBG" type="submit" name="input1" value="clear feed">Clear Feed <br> [' .$feedcounter.']</button>';

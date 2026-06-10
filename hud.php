@@ -197,15 +197,15 @@ if ($row['hp'] >  $row['hpmax']) { // HP EXTRA
 
 
     if ($weapontype == 3) {
-        echo '<span class="small lgray">DEX</span> <strong class="green">'.$_SESSION['dexmod'].' </strong> ';
-    } elseif ($_SESSION['magmod'] > $_SESSION['strmod'] && $_SESSION['magmod'] > $_SESSION['dexmod']) {
-        echo '<span class="small lgray">MAG</span> <strong class="blue">'.$_SESSION['magmod'].' </strong>';
+        echo '<span class="small lgray">DEX</span> <strong class="green">'.$row['dexmod'].' </strong> ';
+    } elseif ($row['magmod'] > $row['strmod'] && $row['magmod'] > $row['dexmod']) {
+        echo '<span class="small lgray">MAG</span> <strong class="blue">'.$row['magmod'].' </strong>';
     } else {
-        echo '<span class="small lgray">STR</span> <strong class="red">'.$_SESSION['strmod'].' </strong>';
+        echo '<span class="small lgray">STR</span> <strong class="red">'.$row['strmod'].' </strong>';
     }
 
 
-    echo '<span class="small lgray">DEF</span> <strong class="gold">'.$_SESSION['defmod'].' </strong>
+    echo '<span class="small lgray">DEF</span> <strong class="gold">'.$row['defmod'].' </strong>
 			</div>';
     echo '<div class="buffbound small">';
 
@@ -364,9 +364,9 @@ if ($row['hp'] >  $row['hpmax']) { // HP EXTRA
     $activeAtt = "active";
     $activeMag ="";
     $tabType = "";
-    if ($weapontype == 3 && ($_SESSION['magmod'] < $_SESSION['dexmod'])) {
+    if ($weapontype == 3 && ($row['magmod'] < $row['dexmod'])) {
         $tabType = "dex";
-    } elseif ($_SESSION['magmod'] >= $_SESSION['strmod']) {
+    } elseif ($row['magmod'] >= $row['strmod']) {
         $activeAtt = "";
         $activeMag ="active";
     }
@@ -392,11 +392,11 @@ if ($row['hp'] >  $row['hpmax']) { // HP EXTRA
     echo '<div class="item-flex">'; // item flex box
     // --------------------------------------------------------------------- basic ATTACK
     if ($weapontype == 3) {
-        $maxhit = $_SESSION['dexmod'];
+        $maxhit = $row['dexmod'];
         $color = 'green';
        // $icon = "bowarrow";
     } else {
-        $maxhit = $_SESSION['strmod'];
+        $maxhit = $row['strmod'];
         $color = 'red';
         //$icon = "sword1";
        // if ($weapontype == 2) {$icon = "axe1";}
